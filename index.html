@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <title>CARACAS</title>
+    <meta charset="utf-8">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+ 
+     <!-- Enlace tipografías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+
+
+    <!-- Inserción del favicon -->
+    <link href="img/guacamaya.png" rel="icon" type="image/png">
+
+    <!-- Flickity CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+        
+    <!-- Iconos Font Awesome -->
+    <script src="https://kit.fontawesome.com/4fff95fcfc.js" crossorigin="anonymous"></script>
+    
+    
+    <!-- Meta Viewport -->
+     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+    <!-- JQUERY SE DEBE CARGAR SIEMPRE ANTES DE MI SCRIPT -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" 
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
+
+
+</head>
+
+<body>
+    
+        
+        <header>
+
+            <video poster="img/caracasheader.mp4" playsinline autoplay muted loop>
+                <source src="img/caracasheader.mp4" type="video/webm">
+            </video>
+            
+            <h1>CARACAS</h1>
+        
+                <nav id="menu">
+                    <div>
+                        <i class="fas fa-bars" onclick="menu()"></i>
+                        <ul>
+                            <li>
+                                <a href="#ciudad" onclick="closeMenu()">Ciudad</a>
+                            </li>
+                            <li>
+                                <a href="#turismo" onclick="closeMenu()">Turismo</a>
+                            </li>
+                            <li>
+                                <a href="#chart" onclick="closeMenu()">Clima</a>
+                            </li>
+                            <li>
+                                <a href="#transporte" onclick="closeMenu()">Transporte</a>
+                            </li>
+                            <li>
+                                <a href="#youtube" onclick="closeMenu()">2000</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                            </li>
+                        </ul>
+                    </div>
+               
+            </nav>
+        </header>
+        
+        
+        <footer>
+        
+            <section id="logo">
+                <img src="img/guacamaya.png" alt="guacamaya">
+            </section>
+            
+            <section id="descripcion">
+             <p>©️ Caracas, VE. Turismo de calidad 2024</p>
+            </section>
+
+            <div>
+                <p>Subscríbete a Nuestra Newsletter</p>
+            <form
+          class="mt-1"
+          name="email-form"
+          method="POST"
+          data-netlify="true"
+        >
+          <div class="email-form">
+            <span class="form-control-wrap"><input
+                type="email"
+                name="email"
+                id="email"
+                size="40"
+                class="form-control"
+                placeholder="E-mail"/></span>
+                <button type="submit" value="Submit" class="form-control submit">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </form>
+    </div>
+
+
+     </footer>   
+     
+     
+  <!-- CHART JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script src="js/script.js"></script>
+  
+  </body>
+  
+  </html>       
