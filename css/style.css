@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    
+}
+
+body {
+    background-color: var(--background-color1);
+}
+
+h1 ,
+h2,
+h3, 
+h4 { 
+    font-family: 'Paytone One', sans-serif;
+
+}
+
+:root {
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
+    --background-color1: rgb(255, 255, 255);
+    --background-color2: rgb(0, 0, 0);
+
+}
+
+
+
+
+
+/* Header */
+.navbar {
+    margin: 10px;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-brand {
+    width: 10%;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 10px; /* Ajustar padding vertical y horizontal */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Espacio entre los elementos */
+} 
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.my-color-btn {
+    background-color: black;
+}
+
+
+header:hover {
+    background: var(--background-color1);
+    color: var(--color2);
+  } 
+
+  
+
+/* Menu */
+
+
+
+#menu ul li a:hover {
+    color: var(--color1);
+} 
+
+.closeMenu {
+    left: -100%;
+}
+
+#menu i:hover {
+    color: var(--color1);
+}
+
+
+
+
+
+
