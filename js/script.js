@@ -9,6 +9,21 @@ $("#menu .fa-bars").click(function(){
     console.log("cerrar");
     $("#menu ul").css("left", "-100%");
   });
+
+  
+  const logo = document.getElementById('logo');
+        const originalSrc = 'img/home/madtrendslogoblanco.png'; // Ruta de la imagen original
+        const hoverSrc = 'img/home/madtrendslogonegro.png'; // Ruta de la nueva imagen
+
+        // Cambiar la imagen al hacer hover en el contenedor del menú
+        document.querySelector('.menu').addEventListener('mouseenter', () => {
+            logo.src = hoverSrc;
+        });
+
+        // Restaurar la imagen original al salir del hover
+        document.querySelector('.menu').addEventListener('mouseleave', () => {
+            logo.src = originalSrc;
+        });
   
   
   

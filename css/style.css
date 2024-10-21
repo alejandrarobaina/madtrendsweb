@@ -69,31 +69,59 @@ body {
     background-color: black;
 }
 
+/* Estilo para el contenedor principal del menú */
+.menu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Colocar justo debajo del navbar principal */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Fondo del submenú */
+    z-index: 1000;
+}
 
 header:hover {
     background: var(--background-color1);
     color: var(--color2);
   } 
 
-  
-
-/* Menu */
-
-
-
-#menu ul li a:hover {
-    color: var(--color1);
-} 
-
-.closeMenu {
-    left: -100%;
+.menu:hover .btn-light {
+    background-color: #000000; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
 }
 
-#menu i:hover {
-    color: var(--color1);
+.menu:hover .btn-outline-light {
+    color: #000000; /* Texto oscuro */
+    border-color: #000000; /* Borde blanco */
 }
 
 
+/* Mostrar el submenú al hacer hover sobre el contenedor del menú */
+.menu:hover .submenu {
+    display: block;
+}
+
+/* Estilos para los enlaces del submenú */
+.submenu .nav-link {
+    padding: 10px 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.submenu .navbar-nav {
+    flex-direction: row; /* Para que los elementos estén en una fila */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu .nav-item {
+    list-style: none;
+}
 
 
 
