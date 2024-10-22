@@ -229,3 +229,45 @@ div#fashion {
 .white-text {
     color: white; /* Texto blanco */
 }
+
+
+
+/* VIENE Y VA */
+
+#vieneyva {
+    padding: 50px 0; /* Espacio superior e inferior */
+    
+}
+
+.text-left {
+    margin-left: 8%; /* Espacio adicional desde el margen izquierdo */
+}
+
+.arrow {
+    margin-left: 5px; /* Espacio entre el texto y la flecha */
+    color: white; /* Color de la flecha */
+}
+
+.container-cards {
+    padding: 7%;
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+.card {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: none; /* Sin borde */
+    background-color: transparent; /* Sin color de fondo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+/* Estilo para la tarjeta expandida */
+.card:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta al hacer hover */
+}
+
+/* Estilo para reducir las tarjetas adyacentes */
+.card:not(:hover) {
+    transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
+}
