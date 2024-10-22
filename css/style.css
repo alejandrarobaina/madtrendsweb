@@ -20,9 +20,19 @@ body {
 h1 ,
 h2,
 h3, 
-h4 { 
-    font-family: 'Paytone One', sans-serif;
+h4,
+p { 
+    font-family:  sans-serif;
+    color: white;
 
+}
+
+
+h1 {
+    font-size: 5rem; /* Aumentar tamaño del h1 */
+}
+h3 {
+    font-size: 1.25rem; /* Disminuir tamaño del h3 */
 }
 
 :root {
@@ -80,18 +90,19 @@ body {
     width: 100%;
     background-color: #ffffff; /* Fondo del submenú */
     z-index: 1000;
+    z-index: 996;
 }
 
 @media (min-width: 700px) {
 .menu:hover {
-    background: var(--background-color1);
-    color: var(--color2);
-    z-index: 998;
+    background-color: white;
+    z-index: 995;
   } 
 
 .menu:hover .btn-light {
     background-color: #000000; /* Fondo oscuro */
     color: #fff; /* Texto blanco */
+    
 }
 
 .menu:hover .btn-outline-light {
@@ -128,6 +139,10 @@ body {
     border-radius: 0;
 }
 
+.navbar:hover {
+    background-color: white;
+    z-index: 999;
+}
 .navbar-toggler {
     border: none; /* Quitar el borde del botón */
 }
@@ -142,6 +157,15 @@ body {
     
 }
 
+header > h1 {
+    font-size: 12vw;
+    z-index: 1;
+    font-weight: bold;
+    color: var(--color1);
+    mix-blend-mode: difference 20%;
+    z-index: 990;
+}
+
 video { 
     position: absolute;
     top: 0;
@@ -150,7 +174,7 @@ video {
     height: 100%;
     object-fit: cover;
     object-position: center;
-    z-index: 980;
+    z-index: 790;
 }
 div#fashion {
   min-height: 100vh;
@@ -160,4 +184,48 @@ div#fashion {
 }
 
 
+/* Contenedor del video */
+.video-container {
+    position: relative; /* Asegúrate de que el contenedor sea relativo */
+    height: 100vh; /* Esto asegura que el video ocupe toda la altura del viewport */
+    overflow: hidden; /* Evita que el contenido salga del contenedor */
+}
 
+.video-container video {
+    position: absolute; /* Posiciona el video dentro del contenedor */
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Asegúrate de que cubra todo el ancho */
+    min-height: 100%; /* Asegúrate de que cubra toda la altura */
+    width: auto; /* Mantiene la proporción */
+    height: auto; /* Mantiene la proporción */
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+
+/* Texto superpuesto */
+.overlay-text {
+    position: absolute; /* Para superponer el texto sobre el video */
+    top: 50%; /* Centrado verticalmente */
+    left: 0; /* Pegado al margen izquierdo */
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+    color: white; /* Color del texto */
+    padding-left: 7%; /* Espaciado a la izquierda */
+    z-index: 800;
+}
+
+
+
+
+
+
+/* SECCIONES */
+
+/* NUESTRA HISTORIA */
+
+#historia {
+    padding: 20%; /* Padding vertical de 50px */
+}
+
+.white-text {
+    color: white; /* Texto blanco */
+}
