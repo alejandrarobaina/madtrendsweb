@@ -66,54 +66,81 @@
 
     <body>
         <header>
+                
             <div class="menu">
-            <!-- NAVBAR PRINCIPAL -->
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid d-flex justify-content-between align-items-center">
-                    <!-- Espacio a la izquierda para centrar el logo -->
-                    <div class="d-flex flex-grow-1"></div>
-                    <!-- Logo centrado -->
-                    <a class="navbar-brand mx-auto" href="#">
-                        <img id="logo" src="img/home/madtrendslogoblanco.png" alt="MadTrends" class="img-fluid" style="max-height: 10%;">
-                    </a>
-                    <!-- Botones pegados al margen derecho -->
-                    <div class="d-flex flex-grow-1 justify-content-end">
-                        <button class="btn btn-light me-2">SUBSCRIBE</button>
-                        <button class="btn btn-outline-light">SIGN IN</button>
+                <!-- NAVBAR PRINCIPAL -->
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid d-flex  align-items-center">
+                       
+                        <!-- Espacio a la izquierda para centrar el logo -->
+                        <div class="d-flex flex-grow-1"></div>
+                        <!-- Logo centrado -->
+                        <a class="navbar-brand mx-auto" href="#">
+                            <img id="logo" src="img/home/madtrendslogoblanco.png" alt="MadTrends" class="img-fluid" style="max-height: 10%;">
+                        </a>
+                        <!-- Botones pegados al margen derecho -->
+                        <div class="d-flex flex-grow-1 justify-content-end">
+                            <button class="btn btn-light me-2">SUBSCRIBE</button>
+                            <button class="btn btn-outline-light">SIGN IN</button>
+                        </div>
+                    </div>
+                
+                </nav>
+    
+                <!-- SUBMENÚ -->
+                <div class="submenu">
+                    <div class="container-fluid">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#historia" onclick="closeMenu()">Nuestra Historia</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#vieneyva" onclick="closeMenu()">Viene y Va</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#dailyinspo" onclick="closeMenu()">Daily Inspo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#growingbrands" onclick="closeMenu()">Growing Brands</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#cayolanoche" onclick="closeMenu()">Cayó la Noche</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#news" onclick="closeMenu()">Latest News</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            
-            </nav>
 
-            <!-- SUBMENÚ -->
-            <div class="submenu">
-                <div class="container-fluid">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nuestra Historia</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Viene y Va</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Daily Inspo</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Growing Brands</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Cayó la Noche</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Latest News</a>
-                        </li>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><button class="dropdown-item" type="button">Action</button></li>
+                      <li><button class="dropdown-item" type="button">Another action</button></li>
+                      <li><button class="dropdown-item" type="button">Something else here</button></li>
                     </ul>
-                </div>
-            </div>
-        </div>
+                  </div>
+        
+            </div>  
+            
+            <video poster="img/home/caracasheader.mp4" playsinline autoplay muted loop>
+                <source src="img/home/caracasheader.mp4" type="video/webm">
+            </video>  
+            
 
         </header>
 
+        
+
+    
+
+        
+        
+       
+        
         
 
      

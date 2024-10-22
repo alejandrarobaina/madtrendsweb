@@ -38,9 +38,6 @@ h4 {
 
 
 /* Header */
-.navbar {
-    margin: 10px;
-}
 
 .container {
     margin: 0;
@@ -72,6 +69,7 @@ body {
 /* Estilo para el contenedor principal del menú */
 .menu {
     position: relative;
+    z-index: 999;
 }
 
 .submenu {
@@ -84,9 +82,11 @@ body {
     z-index: 1000;
 }
 
-header:hover {
+@media (min-width: 700px) {
+.menu:hover {
     background: var(--background-color1);
     color: var(--color2);
+    z-index: 998;
   } 
 
 .menu:hover .btn-light {
@@ -122,7 +122,42 @@ header:hover {
 .submenu .nav-item {
     list-style: none;
 }
+}
 
+.btn {
+    border-radius: 0;
+}
+
+.navbar-toggler {
+    border: none; /* Quitar el borde del botón */
+}
+
+/* Cambiar el color del icono del menú hamburguesa */
+.navbar-toggler-icon {
+    background-color: none; /* Color del icono del menú */
+}
+
+/* Mostrar el botón hamburguesa solo en pantallas pequeñas y al hacer hover en el navbar */
+@media (max-width: 700px) {
+    
+}
+
+video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 980;
+}
+div#fashion {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 
 

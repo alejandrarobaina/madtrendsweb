@@ -10,7 +10,7 @@ $("#menu .fa-bars").click(function(){
     $("#menu ul").css("left", "-100%");
   });
 
-  
+
   const logo = document.getElementById('logo');
         const originalSrc = 'img/home/madtrendslogoblanco.png'; // Ruta de la imagen original
         const hoverSrc = 'img/home/madtrendslogonegro.png'; // Ruta de la nueva imagen
@@ -26,7 +26,16 @@ $("#menu .fa-bars").click(function(){
         });
   
   
+        // JavaScript para controlar el comportamiento del menú hamburguesa
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const submenu = document.getElementById('navbarNav');
+
+        navbarToggler.addEventListener('click', () => {
+            submenu.classList.toggle('show'); // Cambia la clase 'show' para mostrar/ocultar el submenú
+        });
   
+
+        
   // Initialize ChartJS
   const ctx = $('#myChart');
   
