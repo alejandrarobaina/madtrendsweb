@@ -284,12 +284,47 @@ div#fashion {
     padding: 20%;
 }
 
+/* GROWING BRANDS */
 
+.full-width-image {
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio en blanco debajo de la imagen */
+}
 
+.image-container {
+    position: relative; /* Para el posicionamiento del overlay */
+}
 
+.overlay {
+    position: absolute;
+    bottom: 10%; /* Pegado a la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    
 
+}
 
+.overlay p, .overlay h2 {
+    margin: 2px; /* Eliminar márgenes */
+}
 
+.btn {
+    margin-top: 10px; /* Espacio entre el botón y el subtítulo */
+}
+
+.full-width-image {
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio en blanco debajo de la imagen */
+}
+
+.brandscontainer-fluid {
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
 /* CAYÓ LA NOCHE */
 
 /* #cayolanoche {
@@ -324,9 +359,12 @@ div#fashion {
 
 
 
+
+
+
 /* VIENE Y VA PÁGINA */
 
-
+ 
 
 /* CAYÓ LA NOCHE PÁGINA */
 
