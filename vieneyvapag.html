@@ -66,8 +66,8 @@
 
 
         <div class="video-container">
-            <video poster="img/home/madtrendsinicio.mp4" playsinline autoplay muted loop>
-                <source src="img/home/madtrendsinicio.mp4" type="video/webm">
+            <video poster="img/vieneyva/vieneyvaheader.png" playsinline autoplay muted loop>
+                <source src="img/vieneyva/vieneyvaheader.png" type="video/webm">
             </video>
 
           
@@ -130,6 +130,26 @@
             </div> 
         </div>
     </nav>
+    <style>
+        .container {
+            display: flex;
+            height: 548px; /* Ajusta la altura según lo necesites */
+            weight:548px;
+        }
+        .foto {
+            flex: 1; /* Toma la mitad del espacio */
+            background-image: url(img/vieneyva/a.jpg); /* Reemplaza con tu imagen */
+            background-size: cover; /* Ajusta la imagen para cubrir el espacio */
+            background-position: center; /* Centra la imagen */
+        }
+        .texto {
+            flex: 1; /* Toma la otra mitad del espacio */
+            padding: 20px; /* Espacio interno */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Centra verticalmente el contenido */
+        }
+    </style>
     
             
             
@@ -137,53 +157,56 @@
     </header>
             
    
-    <section id="vieneyva">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-                <div class="text-left">
-                    <h2 class="mb-0">VIENE Y VA</h2>
-                </div>
-                <div class="text-right">
-                    <button class="btn btn-white text-white" onclick="location.href='vieneyvapag.html'"> Leer Artículo <span class="arrow">></span> </button>
-                </div>
-            </div>
-        </div>
+    
+        
+        <section id="vieneyva">
 
-        <div class="container-cards">
-            <div class="container justify-content-center p-3">
-                <div class="row justify-content-center">
-                    <div class="col-md-4">
-                        <div class="card text-center"> <!-- Clase 'text-center' añadida para centrar el contenido -->
-                            <img src="img/home/tee.png" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <p class="card-text">GRAPHIC TEES</p>
-                                <h4 class="card-title text-white">“Back to the 90´s <br>and early 2000´s”</h4>
-                            </div>
-                        </div>
+           
+
+<div class="container">
+    <div class="foto"></div>
+    <div class="texto">
+        <h2>Título del Texto</h2>
+        <p>Este es el texto que aparece al lado de la imagen. Puedes añadir más contenido aquí.</p>
+    </div>
+</div>
+
+ <div class="container-cards">
+    <div class="container justify-content-center p-3">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="card text-center-right"> <!-- Clase 'text-center' añadida para centrar el contenido -->
+                    <img src="img/vieneyva/tee1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-right align-items-center">
+                        <p class="card-text">GRAPHIC TEES</p>
+                        <h4 class="card-title text-white">“Back to the 90´s <br>and early 2000´s”</h4>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <img src="img/home/adidas.jpg" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <p class="card-text">ADIDAS</p>
-                                <h4 class="card-title text-white">“El regreso de las Adidas: vinieron para quedarse”</h4>
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/home/adidas.jpg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <p class="card-text">ADIDAS</p>
+                        <h4 class="card-title text-white">“El regreso de las Adidas: vinieron para quedarse”</h4>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card text-center">
-                            <img src="img/home/lace.jpeg" class="card-img-top" alt="...">
-                            <div class="card-body d-flex flex-column align-items-center">
-                                <p class="card-text">LACE</p>
-                                <h4 class="card-title text-white">“Una vuelta al encaje de toda la vida con Chloe”</h4> 
-                            </div>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card text-center">
+                    <img src="img/home/lace.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body d-flex flex-column align-items-center">
+                        <p class="card-text">LACE</p>
+                        <h4 class="card-title text-white">“Una vuelta al encaje de toda la vida con Chloe”</h4> 
                     </div>
                 </div>
             </div>
         </div>
-            
-        </div>
+    </div>
+</div>
+    
+</div>
+       
     </section>
        
 
