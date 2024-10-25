@@ -249,7 +249,7 @@ div#fashion {
 }
 
 .container-cards {
-    padding: 7%;
+    padding: 5%;
     border-radius: 0; /* Sin esquinas redondeadas */
 }
 
@@ -271,3 +271,55 @@ div#fashion {
 .card:not(:hover) {
     transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
 }
+
+
+
+
+
+
+
+/* CAYÓ LA NOCHE */
+
+#cayolanoche {
+    padding-bottom: ;
+}
+.container-noche {
+    padding: 6%;  
+     
+}
+
+.container-texto {
+    padding-left:6%;
+}
+
+
+/* LATEST NEWS */
+
+.container-news {
+    padding: 5%;
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+.card-news {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: none; /* Sin borde */
+    background-color: white; /* Sin color de fondo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+
+
+
+/* VIENE Y VA PÁGINA */
+
+
+
+/* CAYÓ LA NOCHE PÁGINA */
+
+#vidanocturna {
+    padding: 20%; /* Padding vertical de 50px */
+}
+
+
