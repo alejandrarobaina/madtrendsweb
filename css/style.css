@@ -54,6 +54,9 @@ h3 {
     padding: 0;
 }
 
+.navbar {
+    padding: 2%;
+}
 .navbar-brand {
     width: 10%;
 }
@@ -80,7 +83,9 @@ body {
 .menu {
     position: relative;
     z-index: 999;
+    
 }
+
 
 .submenu {
     display: none;
@@ -280,9 +285,9 @@ div#fashion {
 
 /* CAYÓ LA NOCHE */
 
-#cayolanoche {
+/* #cayolanoche {
     padding-bottom: ;
-}
+} */
 .container-noche {
     padding: 6%;  
      
