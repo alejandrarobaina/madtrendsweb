@@ -3,6 +3,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    color: white;
 }
 
 img {
@@ -20,16 +21,17 @@ body {
 h1 ,
 h2,
 h3, 
-h4,
-p { 
-    font-family:  sans-serif;
+h4 {
     color: white;
-
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 
 h1 {
     font-size: 5rem; /* Aumentar tamaño del h1 */
+    
 }
 h3 {
     font-size: 1.25rem; /* Disminuir tamaño del h3 */
@@ -275,6 +277,11 @@ div#fashion {
 /* Estilo para reducir las tarjetas adyacentes */
 .card:not(:hover) {
     transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
+}
+
+/* DAILY INSPO */
+.inspotextcontainer {
+    padding: 20%;
 }
 
 
