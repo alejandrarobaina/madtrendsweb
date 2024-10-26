@@ -34,6 +34,46 @@ $("#menu .fa-bars").click(function(){
             submenu.classList.toggle('show'); // Cambia la clase 'show' para mostrar/ocultar el submenú
         });
   
-      
-  
+
+        // JavaScript para controlar el comportamiento del Carrusel
+        $(document).ready(function(){
+            $('#carouselExample').on('slide.bs.carousel', function (e) {
+                var itemsPerSlide = 5;
+                var totalItems = $('.carousel-item').length;
+                var $e = $(e.relatedTarget);
+                var idx = $e.index();
     
+                if (idx >= totalItems - (itemsPerSlide - 1)) {
+                    var it = itemsPerSlide - (totalItems - idx);
+                    for (var i = 0; i < it; i++) {
+                        // Agrega los elementos faltantes al final
+                        if (e.direction === "left") {
+                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                        } else {
+                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                        }
+                    }
+                }
+            });
+        });
+  
+
+
+    $(document).ready(function() {
+        $('#carouselExample').on('slide.bs.carousel', function (e) {
+            var $next = $(e.relatedTarget);
+            var idx = $next.index();
+            var totalItems = $('.carousel-item').length;
+
+            if (idx >= totalItems - 5) {
+                var it = 5 - (totalItems - idx);
+                for (var i = 0; i < it; i++) {
+                    if (e.direction === "left") {
+                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                    } else {
+                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
+                    }
+                }
+            }
+        });
+    });
