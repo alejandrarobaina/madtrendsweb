@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000;
-    color: #000;
+    background-color: #f0f0f0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,12 +8,20 @@ body {
     margin: 0;
 }
 
+.card-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
 .card {
     background-color: #fff;
     border-radius: 8px;
     overflow: hidden;
-    width: 350px;
+    width: 300px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex-shrink: 0;
 }
 
 .card-image {
@@ -23,26 +30,16 @@ body {
 }
 
 .card-content {
-    padding: 20px;
+    padding: 15px;
 }
 
 .card-content h3 {
-    text-transform: uppercase;
-    font-size: 0.9rem;
-    letter-spacing: 1.2px;
-    margin-bottom: 10px;
-    color: #000;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
 }
 
-.card-content .headline {
-    font-weight: bold;
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    color: #000;
-}
-
-.card-content .author {
-    color: #555;
-    font-style: italic;
-    font-size: 0.85rem;
+.card-content p {
+    font-size: 1rem;
+    color: #666;
 }
