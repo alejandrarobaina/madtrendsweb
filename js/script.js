@@ -57,23 +57,4 @@ $("#menu .fa-bars").click(function(){
             });
         });
   
-
-
-    $(document).ready(function() {
-        $('#carouselExample').on('slide.bs.carousel', function (e) {
-            var $next = $(e.relatedTarget);
-            var idx = $next.index();
-            var totalItems = $('.carousel-item').length;
-
-            if (idx >= totalItems - 5) {
-                var it = 5 - (totalItems - idx);
-                for (var i = 0; i < it; i++) {
-                    if (e.direction === "left") {
-                        $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                    } else {
-                        $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                    }
-                }
-            }
-        });
-    });
+       

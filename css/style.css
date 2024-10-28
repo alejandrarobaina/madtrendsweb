@@ -46,6 +46,16 @@ h3 {
 }
 
 
+.btn {
+    margin: 5px !important;
+}
+
+.btn-light:hover {
+    background-color: #ff0e87; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-color: #ff0e87;
+    
+}
 
 
 
@@ -88,7 +98,6 @@ body {
     
 }
 
-
 .submenu {
     display: none;
     position: absolute;
@@ -109,6 +118,7 @@ body {
 .menu:hover .btn-light {
     background-color: #000000; /* Fondo oscuro */
     color: #fff; /* Texto blanco */
+    border-color: #000000;
     
 }
 
@@ -117,6 +127,17 @@ body {
     border-color: #000000; /* Borde blanco */
 }
 
+.menu:hover .btn-light:hover {
+    background-color: #ff0e87; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-color: #ff0e87;
+    
+}
+
+.menu:hover .btn-outline-light:hover {
+    color: #ff0e87; /* Texto oscuro */
+    border-color: #ff0e87; /* Borde blanco */
+}
 
 /* Mostrar el submenú al hacer hover sobre el contenedor del menú */
 .menu:hover .submenu {
@@ -286,6 +307,11 @@ div#fashion {
 
 /* GROWING BRANDS */
 
+.brandsimages {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
 .full-width-image {
     width: 100%; /* Abarca todo el ancho de la pantalla */
     height: auto; /* Mantiene la proporción de la imagen */
@@ -296,6 +322,19 @@ div#fashion {
     position: relative; /* Para el posicionamiento del overlay */
 }
 
+/* Capa de degradado */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.435)); /* Degradado de blanco a negro con 20% de opacidad */
+    z-index: 1; /* Colocar detrás del contenido de la imagen */
+}
+
+
 .overlay {
     position: absolute;
     bottom: 10%; /* Pegado a la parte inferior */
@@ -303,8 +342,7 @@ div#fashion {
     transform: translateX(-50%); /* Centrar horizontalmente */
     color: white; /* Color del texto */
     text-align: center; /* Centrar texto */
-    
-
+    z-index: 2; /* Asegura que el contenido esté por encima del degradado */
 }
 
 .overlay p, .overlay h2 {
@@ -315,21 +353,30 @@ div#fashion {
     margin-top: 10px; /* Espacio entre el botón y el subtítulo */
 }
 
-.full-width-image {
-    width: 100%; /* Abarca todo el ancho de la pantalla */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacio en blanco debajo de la imagen */
+.image-container {
+    position: relative;
+    overflow: hidden; /* Para que el zoom no se salga del contenedor */
 }
 
-.brandscontainer-fluid {
-    padding-top: 10%;
-    padding-bottom: 10%;
+.full-width-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Transición suave para el zoom */
 }
+
+.image-container:hover .full-width-image {
+    transform: scale(1.1); /* Hace zoom al 110% al hacer hover */
+}
+
+
+  
 /* CAYÓ LA NOCHE */
 
-/* #cayolanoche {
-    padding-bottom: ;
-} */
+ #cayolanoche {
+    padding-bottom: 3%;
+    padding-bottom: 7%;
+} 
+
 .container-noche {
     padding: 6%;  
      
