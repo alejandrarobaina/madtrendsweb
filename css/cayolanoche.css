@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 0;
+    
+}
+
+body {
+    background-color: var(--background-color1);
+}
+
+h1 ,
+h2,
+h3, 
+h4 {
+    color: white;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+h1 {
+    font-size: 5rem; /* Aumentar tamaño del h1 */
+    
+}
+h3 {
+    font-size: 1.25rem; /* Disminuir tamaño del h3 */
+}
+
+:root {
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
+    --background-color1: rgb(255, 255, 255);
+    --background-color2: rgb(0, 0, 0);
+
+}
+
+
+.btn {
+    margin: 5px !important;
+}
+
+.btn-light:hover {
+    background-color: #ff0e87; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-color: #ff0e87;
+    
+}
+
+
+
+/* Header */
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    padding: 2%;
+}
+.navbar-brand {
+    width: 10%;
+}
+
+.navbar-nav .nav-link {
+    padding: 10px 10px; /* Ajustar padding vertical y horizontal */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 50px; /* Espacio entre los elementos */
+} 
+
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.my-color-btn {
+    background-color: black;
+}
+
+/* Estilo para el contenedor principal del menú */
+.menu {
+    position: relative;
+    z-index: 999;
+    
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Colocar justo debajo del navbar principal */
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; /* Fondo del submenú */
+    z-index: 1000;
+    z-index: 996;
+}
+
+@media (min-width: 700px) {
+.menu:hover {
+    background-color: white;
+    z-index: 995;
+  } 
+
+.menu:hover .btn-light {
+    background-color: #000000; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-color: #000000;
+    
+}
+
+.menu:hover .btn-outline-light {
+    color: #000000; /* Texto oscuro */
+    border-color: #000000; /* Borde blanco */
+}
+
+.menu:hover .btn-light:hover {
+    background-color: #ff0e87; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    border-color: #ff0e87;
+    
+}
+
+.menu:hover .btn-outline-light:hover {
+    color: #ff0e87; /* Texto oscuro */
+    border-color: #ff0e87; /* Borde blanco */
+}
+
+/* Mostrar el submenú al hacer hover sobre el contenedor del menú */
+.menu:hover .submenu {
+    display: block;
+}
+
+/* Estilos para los enlaces del submenú */
+.submenu .nav-link {
+    padding: 10px 15px;
+    color: #000000;
+    text-align: center;
+}
+
+.submenu .navbar-nav {
+    flex-direction: row; /* Para que los elementos estén en una fila */
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu .nav-item {
+    list-style: none;
+}
+}
+
+.btn {
+    border-radius: 0;
+}
+
+.navbar:hover {
+    background-color: white;
+    z-index: 999;
+}
+.navbar-toggler {
+    border: none; /* Quitar el borde del botón */
+}
+
+/* Cambiar el color del icono del menú hamburguesa */
+.navbar-toggler-icon {
+    background-color: none; /* Color del icono del menú */
+}
+
+/* Mostrar el botón hamburguesa solo en pantallas pequeñas y al hacer hover en el navbar */
+@media (max-width: 700px) {
+    
+}
+
+header > h1 {
+    font-size: 12vw;
+    z-index: 1;
+    font-weight: bold;
+    color: var(--color1);
+    mix-blend-mode: difference 20%;
+    z-index: 990;
+}
+
+video { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 790;
+}
+div#fashion {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Contenedor del video */
+.video-container {
+    position: relative; /* Asegúrate de que el contenedor sea relativo */
+    height: 100vh; /* Esto asegura que el video ocupe toda la altura del viewport */
+    overflow: hidden; /* Evita que el contenido salga del contenedor */
+}
+
+.video-container video {
+    position: absolute; /* Posiciona el video dentro del contenedor */
+    top: 50%;
+    left: 50%;
+    min-width: 100%; /* Asegúrate de que cubra todo el ancho */
+    min-height: 100%; /* Asegúrate de que cubra toda la altura */
+    width: auto; /* Mantiene la proporción */
+    height: auto; /* Mantiene la proporción */
+    transform: translate(-50%, -50%); /* Centra el video */
+}
+
+/* Texto superpuesto */
+.overlay-text {
+    position: absolute; /* Para superponer el texto sobre el video */
+    top: 50%; /* Centrado verticalmente */
+    left: 0; /* Pegado al margen izquierdo */
+    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+    color: white; /* Color del texto */
+    padding-left: 7%; /* Espaciado a la izquierda */
+    z-index: 800;
+}
+
+
+
+
+
+
+/* SECCIONES */
+
+/* NUESTRA HISTORIA */
+
+#historia {
+    padding: 20%; /* Padding vertical de 50px */
+}
+
+.white-text {
+    color: white; /* Texto blanco */
+}
+
+
+
+/* VIENE Y VA */
+
+#vieneyva {
+    padding: 50px 0; /* Espacio superior e inferior */
+    
+}
+
+.text-left {
+    margin-left: 8%; /* Espacio adicional desde el margen izquierdo */
+}
+
+.arrow {
+    margin-left: 5px; /* Espacio entre el texto y la flecha */
+    color: white; /* Color de la flecha */
+}
+
+.container-cards {
+    padding: 5%;
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+.card {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: none; /* Sin borde */
+    background-color: transparent; /* Sin color de fondo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+/* Estilo para la tarjeta expandida */
+.card:hover {
+    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta al hacer hover */
+}
+
+/* Estilo para reducir las tarjetas adyacentes */
+.card:not(:hover) {
+    transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
+}
+
+/* DAILY INSPO */
+.inspotextcontainer {
+    padding: 20%;
+}
+
+/* GROWING BRANDS */
+
+.brandsimages {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.full-width-image {
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio en blanco debajo de la imagen */
+}
+
+.image-container {
+    position: relative; /* Para el posicionamiento del overlay */
+}
+
+/* Capa de degradado */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.435)); /* Degradado de blanco a negro con 20% de opacidad */
+    z-index: 1; /* Colocar detrás del contenido de la imagen */
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 10%; /* Pegado a la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    color: white; /* Color del texto */
+    text-align: center; /* Centrar texto */
+    z-index: 2; /* Asegura que el contenido esté por encima del degradado */
+}
+
+.overlay p, .overlay h2 {
+    margin: 2px; /* Eliminar márgenes */
+}
+
+.btn {
+    margin-top: 10px; /* Espacio entre el botón y el subtítulo */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Para que el zoom no se salga del contenedor */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Transición suave para el zoom */
+}
+
+.image-container:hover .full-width-image {
+    transform: scale(1.1); /* Hace zoom al 110% al hacer hover */
+}
+
+
+  
+/* CAYÓ LA NOCHE */
+
+ #cayolanoche {
+    padding-bottom: 3%;
+    padding-bottom: 7%;
+} 
+
+.container-noche {
+    padding: 6%;  
+     
+}
+
+.container-texto {
+    padding-left:6%;
+}
+
+
+/* LATEST NEWS */
+
+.container-news {
+    padding: 5%;
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+.card-news {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: none; /* Sin borde */
+    background-color: white; /* Sin color de fondo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+
+
+
+
+
+
+/* VIENE Y VA PÁGINA */
+#vieneyva {
+    padding-bottom: 3%;
+    padding-bottom: 7%;
+} 
+
+.container-vieneyva {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+     
+     
+}
+
+.container-texto {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+#news {
+    padding-bottom: 3%;
+    padding-bottom: 7%;
+}
+
+.container-news {
+    
+}
+ 
+
+/* CAYÓ LA NOCHE PÁGINA */
+
+.brandsimages {
+    padding-top: 7%;
+    padding-bottom: 7%;
+}
+
+.full-width-image {
+    width: 100%; /* Abarca todo el ancho de la pantalla */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block; /* Elimina espacio en blanco debajo de la imagen */
+}
+
+.image-container {
+    position: relative; /* Para el posicionamiento del overlay */
+}
+
+/* Capa de degradado */
+.image-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.435)); /* Degradado de blanco a negro con 20% de opacidad */
+    z-index: 1; /* Colocar detrás del contenido de la imagen */
+}
+
+
+.overlay {
+    position: absolute;
+    bottom: 10%; /* Pegado a la parte inferior */
+    left: 50%;
+    transform: translateX(-50%); /* Centrar horizontalmente */
+    color: white; /* Color del texto */
+    text-align: left; /* Centrar texto */
+    z-index: 2; /* Asegura que el contenido esté por encima del degradado */
+}
+
+.overlay p, .overlay h2 {
+    margin: 2px; /* Eliminar márgenes */
+}
+
+.btn {
+    margin-top: 10px; /* Espacio entre el botón y el subtítulo */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden; /* Para que el zoom no se salga del contenedor */
+}
+
+.full-width-image {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease; /* Transición suave para el zoom */
+}
+
+.image-container:hover .full-width-image {
+    transform: scale(1.1); /* Hace zoom al 110% al hacer hover */
+}
+
+#vidanocturna {
+    padding: 20%; /* Padding vertical de 50px */
+}
+
+
