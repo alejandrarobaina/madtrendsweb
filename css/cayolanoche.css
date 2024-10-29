@@ -406,9 +406,6 @@ div#fashion {
 
 
 
-
-
-
 /* VIENE Y VA PÁGINA */
 #vieneyva {
     padding-bottom: 3%;
@@ -436,6 +433,155 @@ div#fashion {
 
 .container-news {
     
+}
+
+/* LATEST NEWS */
+
+.container-news {
+    padding: 5%;
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    padding: 9%;
+}
+
+.card-news {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: none; /* Sin borde */
+    background-color: white; /* Sin color de fondo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+    color: #000000 !important;
+    margin-bottom: 20px; /* Margen inferior para separar las tarjetas */
+    height: 100%; /* Para que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+}
+
+.card-text {
+    font-weight: bold;
+    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+    line-height: 1.5; /* Ajusta el interlineado */
+    letter-spacing: 10;
+}
+
+.card-title {
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+    line-height: 1.5; /* Ajusta el interlineado */
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+}
+
+h9 {
+    font-size: 0.9rem; /* Ajuste del tamaño de la fuente para h9 */
+    color: gray; /* Cambiar el color del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+}
+
+
+/* Asegurar que las tarjetas tengan la misma altura */
+.row-equal-height .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-equal-height .card-news {
+    flex: 1;
+}
+
+/* FOOTER */
+
+.footer-top {
+    background-color: white;
+    color: black !important;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 3%;
+}
+
+.footer-logo {
+    padding: 5%;
+}
+
+
+.footer-bottom {
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+.footer-logo {
+    text-align: center;
+}
+
+.footer-columns {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.footer-column {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */  
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+
+}
+
+.list-item {
+    padding: 0 !important;
+}
+
+.footer-direction {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.footer-direction p {
+    color: #000000 !important;
+    font-size: 0.8rem;
+}
+
+.footer-column p {
+    font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
+    margin-bottom: 0 !important;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-column p:hover {
+    text-decoration: none;
+}
+
+.list-link:hover {
+    color: #ff0e87;
+}
+
+.newsletter-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-top: 1%;
+}
+
+.newsletter-column h5 {
+    margin-bottom: 15px; /* Espacio entre el título y el formulario */
+font-size: 1.2rem;
+}
+
+.newsletter-column p {
+    margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
 }
  
 
@@ -506,4 +652,92 @@ div#fashion {
     padding: 20%; /* Padding vertical de 50px */
 }
 
+
+/* FOOTER */
+
+.footer-top {
+    background-color: white;
+    color: black !important;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 3%;
+}
+
+.footer-logo {
+    padding: 5%;
+}
+
+
+.footer-bottom {
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+.footer-logo {
+    text-align: center;
+}
+
+.footer-columns {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.footer-column {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */  
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+
+}
+
+.list-item {
+    padding: 0 !important;
+}
+
+.footer-direction {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.footer-direction p {
+    color: #000000 !important;
+    font-size: 0.8rem;
+}
+
+.footer-column p {
+    font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
+    margin-bottom: 0 !important;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-column p:hover {
+    text-decoration: none;
+}
+
+.list-link:hover {
+    color: #ff0e87;
+}
+
+.newsletter-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-top: 1%;
+}
+
+.newsletter-column h5 {
+    margin-bottom: 15px; /* Espacio entre el título y el formulario */
+font-size: 1.2rem;
+}
+
+.newsletter-column p {
+    margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
+}
 
