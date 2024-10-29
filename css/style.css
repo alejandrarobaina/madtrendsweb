@@ -57,8 +57,6 @@ h3 {
     
 }
 
-
-
 /* Header */
 
 .container {
@@ -80,6 +78,10 @@ h3 {
 .navbar-nav .nav-item {
     margin-right: 50px; /* Espacio entre los elementos */
 } 
+
+.nav-link:hover {
+color: #ff0e87 !important;
+}
 
 body {
     background-color: rgb(0, 0, 0);

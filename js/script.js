@@ -35,26 +35,4 @@ $("#menu .fa-bars").click(function(){
         });
   
 
-        // JavaScript para controlar el comportamiento del Carrusel
-        $(document).ready(function(){
-            $('#carouselExample').on('slide.bs.carousel', function (e) {
-                var itemsPerSlide = 5;
-                var totalItems = $('.carousel-item').length;
-                var $e = $(e.relatedTarget);
-                var idx = $e.index();
-    
-                if (idx >= totalItems - (itemsPerSlide - 1)) {
-                    var it = itemsPerSlide - (totalItems - idx);
-                    for (var i = 0; i < it; i++) {
-                        // Agrega los elementos faltantes al final
-                        if (e.direction === "left") {
-                            $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                        } else {
-                            $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                        }
-                    }
-                }
-            });
-        });
-  
-       
+
