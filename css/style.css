@@ -300,6 +300,11 @@ div#fashion {
     transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
 }
 
+.card-text {
+    letter-spacing: 2px;
+}
+
+
 /* DAILY INSPO */
 .inspotextcontainer {
     padding: 20%;
