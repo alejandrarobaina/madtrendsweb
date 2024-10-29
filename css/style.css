@@ -499,16 +499,24 @@ h9 {
 .footer-column {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
-    padding: 1%;
-    
+    align-items: center; /* Centra verticalmente */  
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+
+}
+
+.list-item {
+    padding: 0 !important;
 }
 
 .footer-direction {
     display: flex;
-    padding: 1%;
-    margin-top: 1%
-    justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .footer-direction p {
@@ -520,13 +528,30 @@ h9 {
     font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
     margin-bottom: 0 !important;
     color: #ffffff;
+    text-decoration: underline;
 }
 
-.newsletter h5 {
+.footer-column p:hover {
+    text-decoration: none;
+}
+
+.list-link:hover {
+    color: #ff0e87;
+}
+
+.newsletter-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-top: 1%;
+}
+
+.newsletter-column h5 {
     margin-bottom: 15px; /* Espacio entre el título y el formulario */
+font-size: 1.2rem;
 }
 
-.newsletter p {
+.newsletter-column p {
     margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
     font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
 }
@@ -540,5 +565,18 @@ h9 {
     text-decoration: none; /* Quita el subrayado de los enlaces */
 }
 
+.form-control {
+    border-radius: 0; /* Elimina el redondeado del input */
+}
 
+.form-btn {
+    background-color: black; /* Cambia el color de fondo a negro */
+    color: white; /* Cambia el color del texto a blanco */
+    border: none; /* Sin borde */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
 
+.form-btn:hover {
+    background-color: #ff0e87; /* Cambia el color de fondo al hacer hover (gris oscuro) */
+    color: #ffffff; /* Asegúrate de que el color del texto se mantenga visible */
+}
