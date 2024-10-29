@@ -416,13 +416,13 @@ div#fashion {
 .card-body {
     flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
     margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
-    line-height: 3; /* Ajusta el interlineado */
 }
 
 .card-text {
     font-weight: bold;
     margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
-    letter-spacing: 2px;
+    line-height: 1.5; /* Ajusta el interlineado */
+    letter-spacing: 10;
 }
 
 .card-title {
@@ -461,5 +461,84 @@ h9 {
 #vidanocturna {
     padding: 20%; /* Padding vertical de 50px */
 }
+
+
+
+
+/* FOOTER */
+
+.footer-top {
+    background-color: white;
+    color: black !important;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 3%;
+}
+
+.footer-logo {
+    padding: 5%;
+}
+
+
+
+
+
+.footer-bottom {
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+.footer-logo {
+    text-align: center;
+}
+
+.footer-columns {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.footer-column {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 1%;
+    
+}
+
+.footer-direction {
+    display: flex;
+    padding: 1%;
+    margin-top: 1%
+    justify-content: center;
+}
+
+.footer-direction p {
+    color: #000000 !important;
+    font-size: 0.8rem;
+}
+
+.footer-column p {
+    font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
+    margin-bottom: 0 !important;
+    color: #ffffff;
+}
+
+.newsletter h5 {
+    margin-bottom: 15px; /* Espacio entre el título y el formulario */
+}
+
+.newsletter p {
+    margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
+}
+
+/* Estilos para los enlaces del submenú */
+.list-link {
+    padding: 0;
+    color: #000000 ;
+    line-height: 3; /* Ajusta el interlineado */
+    letter-spacing: 2px;
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+}
+
 
 
