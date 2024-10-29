@@ -394,6 +394,11 @@ div#fashion {
     border-radius: 0; /* Sin esquinas redondeadas */
 }
 
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    padding: 9%;
+}
+
 .card-news {
     transition: transform 0.3s ease; /* Suaviza la transición */
     cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
@@ -410,22 +415,28 @@ div#fashion {
 
 .card-body {
     flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
-padding: 7%;
+    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+    line-height: 3; /* Ajusta el interlineado */
 }
 
 .card-text {
     font-weight: bold;
     margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+    letter-spacing: 2px;
 }
 
 .card-title {
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+    line-height: 1.5; /* Ajusta el interlineado */
     margin-bottom: 10px; /* Margen inferior para separar los elementos */
 }
 
 h9 {
     font-size: 0.9rem; /* Ajuste del tamaño de la fuente para h9 */
     color: gray; /* Cambiar el color del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
 }
+
 
 /* Asegurar que las tarjetas tengan la misma altura */
 .row-equal-height .col-md-4 {
