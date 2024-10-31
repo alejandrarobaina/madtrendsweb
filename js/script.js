@@ -10,7 +10,7 @@ $("#menu .fa-bars").click(function(){
     $("#menu ul").css("left", "-100%");
   });
 
-  
+
 // LOGO MADTRENDS 
   $(document).ready(function() {
     const $logo = $('#logo');
@@ -55,5 +55,35 @@ $("#menu .fa-bars").click(function(){
     // JavaScript para controlar el comportamiento del menú hamburguesa
     $navbarToggler.on('click', function() {
         $submenu.toggleClass('show'); // Cambia la clase 'show' para mostrar/ocultar el submenú
+    });
+});
+
+
+// CARRUSEL
+$(document).ready(function(){
+    $('.slick-carousel').slick({
+        infinite: true, // Carrusel infinito
+        speed: 700, // Velocidad de transición
+        slidesToShow: 4.5, // Número de slides a mostrar
+        slidesToScroll: 1, // Número de slides a desplazar
+        autoplay: true, // Habilitar autoplay
+        autoplaySpeed: 300, // Intervalo en milisegundos (3 segundos)
+        responsive: [ // Responsividad
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 });
