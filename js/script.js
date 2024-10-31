@@ -67,7 +67,7 @@ $(document).ready(function(){
         slidesToShow: 4.5, // Número de slides a mostrar
         slidesToScroll: 1, // Número de slides a desplazar
         autoplay: true, // Habilitar autoplay
-        autoplaySpeed: 300, // Intervalo en milisegundos (3 segundos)
+        autoplaySpeed: 100, // Intervalo en milisegundos (3 segundos)
         responsive: [ // Responsividad
             {
                 breakpoint: 1024,

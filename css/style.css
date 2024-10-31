@@ -246,6 +246,22 @@ div#fashion {
 
 /* SECCIONES */
 
+.text-right .btn-click {
+    color: var(--color1); /* Cambia el color del texto del botón */
+}
+
+.text-right:hover .btn-click .arrow {
+    color: var(--color3); /* Cambia el color del ícono */
+}
+
+.text-right:hover .btn-click {
+    color: var(--color3); /* Cambia el color del texto del botón */
+}
+
+.text-right:hover .btn-click .arrow {
+    color: var(--color3); /* Cambia el color del ícono */
+}
+
 /* NUESTRA HISTORIA */
 
 #historia {
