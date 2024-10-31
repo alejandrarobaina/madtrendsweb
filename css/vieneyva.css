@@ -401,7 +401,9 @@ div#fashion {
     padding-right: 6%;
     padding-top: 6%;
     padding-bottom: 6%;
-    
+
+
+
     $carousel-control-color:             $white;
     $carousel-control-width:             15%;
     $carousel-control-opacity:           .5;
@@ -429,7 +431,10 @@ div#fashion {
     
     $carousel-transition-duration:       .6s;
     $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
-    }
+    
+}
+    
+
     
 
 .container-texto {
@@ -440,10 +445,6 @@ div#fashion {
 #news {
     padding-bottom: 3%;
     padding-bottom: 7%;
-}
-
-.container-news {
-    
 }
 
 /* LATEST NEWS */
@@ -522,6 +523,9 @@ h9 {
 }
 
 
+
+
+
 .footer-bottom {
     background-color: black;
     color: white;
@@ -594,7 +598,6 @@ font-size: 1.2rem;
     margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
     font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
 }
-
 
 /* CAYÓ LA NOCHE PÁGINA */
 
