@@ -387,25 +387,6 @@ div#fashion {
 }
 
 
-/* LATEST NEWS */
-
-.container-news {
-    padding: 5%;
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-.card-news {
-    transition: transform 0.3s ease; /* Suaviza la transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
-    border: none; /* Sin borde */
-    background-color: white; /* Sin color de fondo */
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-
-
-
 
 
 
@@ -420,9 +401,36 @@ div#fashion {
     padding-right: 6%;
     padding-top: 6%;
     padding-bottom: 6%;
-     
-     
-}
+    
+    $carousel-control-color:             $white;
+    $carousel-control-width:             15%;
+    $carousel-control-opacity:           .5;
+    $carousel-control-hover-opacity:     .9;
+    $carousel-control-transition:        opacity .15s ease;
+    
+    $carousel-indicator-width:           30px;
+    $carousel-indicator-height:          3px;
+    $carousel-indicator-hit-area-height: 10px;
+    $carousel-indicator-spacer:          3px;
+    $carousel-indicator-opacity:         .5;
+    $carousel-indicator-active-bg:       $white;
+    $carousel-indicator-active-opacity:  1;
+    $carousel-indicator-transition:      opacity .6s ease;
+    
+    $carousel-caption-width:             70%;
+    $carousel-caption-color:             $white;
+    $carousel-caption-padding-y:         1.25rem;
+    $carousel-caption-spacer:            1.25rem;
+    
+    $carousel-control-icon-width:        2rem;
+    
+    $carousel-control-prev-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");
+    $carousel-control-next-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$carousel-control-color}'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");
+    
+    $carousel-transition-duration:       .6s;
+    $carousel-transition:                transform $carousel-transition-duration ease-in-out; // Define transform transition first if using multiple transitions (e.g., `transform 2s ease, opacity .5s ease-out`)
+    }
+    
 
 .container-texto {
     padding-left: 6%;
@@ -437,7 +445,156 @@ div#fashion {
 .container-news {
     
 }
- 
+
+/* LATEST NEWS */
+
+.container-news {
+    padding: 5%;
+    border-radius: 0; /* Sin esquinas redondeadas */
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    padding: 9%;
+}
+
+.card-news {
+    transition: transform 0.3s ease; /* Suaviza la transición */
+    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
+    margin: 10px; /* Margen entre las tarjetas */
+    border: none; /* Sin borde */
+    background-color: white; /* Sin color de fondo */
+    border-radius: 0; /* Sin esquinas redondeadas */
+    color: #000000 !important;
+    margin-bottom: 20px; /* Margen inferior para separar las tarjetas */
+    height: 100%; /* Para que todas las tarjetas tengan la misma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body {
+    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+}
+
+.card-text {
+    font-weight: bold;
+    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+    line-height: 1.5; /* Ajusta el interlineado */
+    letter-spacing: 10;
+}
+
+.card-title {
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+    line-height: 1.5; /* Ajusta el interlineado */
+    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+}
+
+h9 {
+    font-size: 0.9rem; /* Ajuste del tamaño de la fuente para h9 */
+    color: gray; /* Cambiar el color del texto */
+    line-height: 1.5; /* Ajusta el interlineado */
+}
+
+
+/* Asegurar que las tarjetas tengan la misma altura */
+.row-equal-height .col-md-4 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-equal-height .card-news {
+    flex: 1;
+}
+
+/* FOOTER */
+
+.footer-top {
+    background-color: white;
+    color: black !important;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    padding: 3%;
+}
+
+.footer-logo {
+    padding: 5%;
+}
+
+
+.footer-bottom {
+    background-color: black;
+    color: white;
+    padding: 1%;
+}
+.footer-logo {
+    text-align: center;
+}
+
+.footer-columns {
+    margin-right: 2%;
+    margin-left: 2%;
+}
+.footer-column {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */  
+}
+
+.list-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+
+}
+
+.list-item {
+    padding: 0 !important;
+}
+
+.footer-direction {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.footer-direction p {
+    color: #000000 !important;
+    font-size: 0.8rem;
+}
+
+.footer-column p {
+    font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
+    margin-bottom: 0 !important;
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-column p:hover {
+    text-decoration: none;
+}
+
+.list-link:hover {
+    color: #ff0e87;
+}
+
+.newsletter-column {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    margin-top: 1%;
+}
+
+.newsletter-column h5 {
+    margin-bottom: 15px; /* Espacio entre el título y el formulario */
+font-size: 1.2rem;
+}
+
+.newsletter-column p {
+    margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
+    font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
+}
+
 
 /* CAYÓ LA NOCHE PÁGINA */
 
