@@ -6,6 +6,18 @@
     color: white;
 }
 
+:root {
+    --color1: rgb(255, 255, 255);
+    --color2: rgb(0, 0, 0);
+    --color3: #ff0e87;
+    --background-color1: rgb(255, 255, 255);
+    --background-color2: rgb(0, 0, 0);
+    --background-color3: #ff0e87;
+    --fuenteTitulos: "Kanit", sans-serif;
+    --fuenteGeneral: 'Poppins', sans-serif;
+
+}
+
 img {
     width: 100%;
     height: auto;
@@ -15,19 +27,18 @@ img {
 }
 
 body {
-    background-color: var(--background-color1);
+    background-color: var(--background-color2);
 }
 
 h1 ,
 h2,
 h3, 
 h4 {
-    color: white;
-    font-family: "Kanit", sans-serif;
+    color: var(--color1);
+    font-family: var(--fuenteTitulos);
     font-weight: 700;
     font-style: normal;
 }
-
 
 h1 {
     font-size: 5rem; /* Aumentar tamaño del h1 */
@@ -37,23 +48,14 @@ h3 {
     font-size: 1.25rem; /* Disminuir tamaño del h3 */
 }
 
-:root {
-    --color1: rgb(255, 255, 255);
-    --color2: rgb(0, 0, 0);
-    --background-color1: rgb(255, 255, 255);
-    --background-color2: rgb(0, 0, 0);
-
-}
-
-
 .btn {
     margin: 5px !important;
 }
 
 .btn-light:hover {
-    background-color: #ff0e87; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    border-color: #ff0e87;
+    background-color: var(--background-color3); /* Fondo oscuro */
+    color: var(--color1); /* Texto blanco */
+    border-color: var(--color3);
     
 }
 
@@ -80,17 +82,11 @@ h3 {
 } 
 
 .nav-link:hover {
-color: #ff0e87 !important;
+color: var(--color3) !important;
 }
-
-body {
-    background-color: rgb(0, 0, 0);
-}
-
-
 
 .my-color-btn {
-    background-color: black;
+    background-color: var(--background-color2);
 }
 
 /* Estilo para el contenedor principal del menú */
@@ -106,39 +102,39 @@ body {
     top: 100%; /* Colocar justo debajo del navbar principal */
     left: 0;
     width: 100%;
-    background-color: #ffffff; /* Fondo del submenú */
+    background-color: var(--background-color1); /* Fondo del submenú */
     z-index: 1000;
     z-index: 996;
 }
 
 @media (min-width: 700px) {
 .menu:hover {
-    background-color: white;
+    background-color: var(--background-color1);
     z-index: 995;
   } 
 
 .menu:hover .btn-light {
-    background-color: #000000; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    border-color: #000000;
+    background-color: var(--background-color2); /* Fondo oscuro */
+    color: var(--color1); /* Texto blanco */
+    border-color: var(--color2);
     
 }
 
 .menu:hover .btn-outline-light {
-    color: #000000; /* Texto oscuro */
-    border-color: #000000; /* Borde blanco */
+    color: var(--color2); /* Texto oscuro */
+    border-color: none; /* Borde blanco */
 }
 
 .menu:hover .btn-light:hover {
-    background-color: #ff0e87; /* Fondo oscuro */
-    color: #fff; /* Texto blanco */
-    border-color: #ff0e87;
+    background-color: var(--background-color3); /* Fondo oscuro */
+    color: var(--color1); /* Texto blanco */
+    border-color: var(--color3);
     
 }
 
 .menu:hover .btn-outline-light:hover {
-    color: #ff0e87; /* Texto oscuro */
-    border-color: #ff0e87; /* Borde blanco */
+    color: var(--color3); /* Texto blanco */
+    border-color: var(--color3);
 }
 
 /* Mostrar el submenú al hacer hover sobre el contenedor del menú */
@@ -170,7 +166,7 @@ body {
 }
 
 .navbar:hover {
-    background-color: white;
+    background-color: var(--background-color1);
     z-index: 999;
 }
 .navbar-toggler {
@@ -238,7 +234,7 @@ div#fashion {
     top: 50%; /* Centrado verticalmente */
     left: 0; /* Pegado al margen izquierdo */
     transform: translateY(-50%); /* Ajusta para centrar verticalmente */
-    color: white; /* Color del texto */
+    color: var(--color1);
     padding-left: 7%; /* Espaciado a la izquierda */
     z-index: 800;
 }
@@ -257,7 +253,7 @@ div#fashion {
 }
 
 .white-text {
-    color: white; /* Texto blanco */
+    color: var(--color1);
 }
 
 
@@ -275,7 +271,7 @@ div#fashion {
 
 .arrow {
     margin-left: 5px; /* Espacio entre el texto y la flecha */
-    color: white; /* Color de la flecha */
+    color: var(--color1);
 }
 
 .container-cards {
@@ -347,7 +343,7 @@ div#fashion {
     bottom: 10%; /* Pegado a la parte inferior */
     left: 50%;
     transform: translateX(-50%); /* Centrar horizontalmente */
-    color: white; /* Color del texto */
+    color: var(--color1);
     text-align: center; /* Centrar texto */
     z-index: 2; /* Asegura que el contenido esté por encima del degradado */
 }
@@ -411,9 +407,9 @@ div#fashion {
     cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
     margin: 10px; /* Margen entre las tarjetas */
     border: none; /* Sin borde */
-    background-color: white; /* Sin color de fondo */
+    background-color: var(--background-color1);
     border-radius: 0; /* Sin esquinas redondeadas */
-    color: #000000 !important;
+    color: var(--color2) !important;
     margin-bottom: 20px; /* Margen inferior para separar las tarjetas */
     height: 100%; /* Para que todas las tarjetas tengan la misma altura */
     display: flex;
@@ -440,7 +436,7 @@ div#fashion {
 
 h9 {
     font-size: 0.9rem; /* Ajuste del tamaño de la fuente para h9 */
-    color: gray; /* Cambiar el color del texto */
+    color: rgb(157, 157, 157); /* Cambiar el color del texto */
     line-height: 1.5; /* Ajusta el interlineado */
 }
 
@@ -475,8 +471,8 @@ h9 {
 /* FOOTER */
 
 .footer-top {
-    background-color: white;
-    color: black !important;
+    background-color: var(--background-color1);
+    color: var(--color2) !important;
     justify-content: center; /* Centra horizontalmente */
     align-items: center; /* Centra verticalmente */
     padding: 3%;
@@ -491,8 +487,8 @@ h9 {
 
 
 .footer-bottom {
-    background-color: black;
-    color: white;
+    background-color: var(--background-color2);
+    color: var(--color1);
     padding: 1%;
 }
 .footer-logo {
@@ -527,14 +523,14 @@ h9 {
 }
 
 .footer-direction p {
-    color: #000000 !important;
+    color: var(--color2) !important;
     font-size: 0.8rem;
 }
 
 .footer-column p {
     font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
     margin-bottom: 0 !important;
-    color: #ffffff;
+    color: var(--color1);
     text-decoration: underline;
 }
 
@@ -543,7 +539,7 @@ h9 {
 }
 
 .list-link:hover {
-    color: #ff0e87;
+    color: var(--color3);
 }
 
 .newsletter-column {
@@ -566,7 +562,7 @@ font-size: 1.2rem;
 /* Estilos para los enlaces del submenú */
 .list-link {
     padding: 0;
-    color: #000000 ;
+    color: var(--color2);
     line-height: 3; /* Ajusta el interlineado */
     letter-spacing: 2px;
     text-decoration: none; /* Quita el subrayado de los enlaces */
@@ -577,13 +573,13 @@ font-size: 1.2rem;
 }
 
 .form-btn {
-    background-color: black; /* Cambia el color de fondo a negro */
-    color: white; /* Cambia el color del texto a blanco */
+    background-color: var(--background-color2); /* Cambia el color de fondo a negro */
+    color: var(--color1); 
     border: none; /* Sin borde */
     transition: background-color 0.3s ease; /* Transición suave para el hover */
 }
 
 .form-btn:hover {
-    background-color: #ff0e87; /* Cambia el color de fondo al hacer hover (gris oscuro) */
-    color: #ffffff; /* Asegúrate de que el color del texto se mantenga visible */
+    background-color: var(--background-color3); /* Cambia el color de fondo al hacer hover (gris oscuro) */
+    color: var(--color1); /* Asegúrate de que el color del texto se mantenga visible */
 }
