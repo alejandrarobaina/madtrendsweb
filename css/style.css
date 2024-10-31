@@ -56,6 +56,7 @@ h3 {
     background-color: var(--background-color3); /* Fondo oscuro */
     color: var(--color1); /* Texto blanco */
     border-color: var(--color3);
+    transition: 0.5s;
     
 }
 
@@ -248,19 +249,30 @@ div#fashion {
 
 .text-right .btn-click {
     color: var(--color1); /* Cambia el color del texto del botón */
+    transition: 0.5s;
 }
 
 .text-right:hover .btn-click .arrow {
     color: var(--color3); /* Cambia el color del ícono */
+    transition: 0.5s;
 }
 
 .text-right:hover .btn-click {
     color: var(--color3); /* Cambia el color del texto del botón */
+    transition: 0.5s;
 }
 
 .text-right:hover .btn-click .arrow {
     color: var(--color3); /* Cambia el color del ícono */
+    transition: 0.5s;
 }
+
+.btn-link:hover {
+    text-decoration: none; /* Quita el subrayado de los enlaces */
+    transition: 0.5s;
+    color: var(--background-color3);
+}
+
 
 /* NUESTRA HISTORIA */
 
