@@ -246,6 +246,22 @@ div#fashion {
 
 /* SECCIONES */
 
+.text-right .btn-click {
+    color: var(--color1); /* Cambia el color del texto del botón */
+}
+
+.text-right:hover .btn-click .arrow {
+    color: var(--color3); /* Cambia el color del ícono */
+}
+
+.text-right:hover .btn-click {
+    color: var(--color3); /* Cambia el color del texto del botón */
+}
+
+.text-right:hover .btn-click .arrow {
+    color: var(--color3); /* Cambia el color del ícono */
+}
+
 /* NUESTRA HISTORIA */
 
 #historia {
@@ -305,7 +321,13 @@ div#fashion {
 
 /* DAILY INSPO */
 .inspotextcontainer {
-    padding: 20%;
+    padding-right: 20%;
+    padding-left: 20%;
+    padding-top: 20%;
+    padding-bottom: 15%;
+}
+.slick-carousel {
+    padding-bottom: 15%;
 }
 
 /* GROWING BRANDS */
