@@ -655,6 +655,142 @@ font-size: 1.2rem;
     padding: 20%; /* Padding vertical de 50px */
 }
 
+#growingbrands {
+    --#{$prefix}modal-zindex: #{$zindex-modal};
+    --#{$prefix}modal-width: #{$modal-md};
+    --#{$prefix}modal-padding: #{$modal-inner-padding};
+    --#{$prefix}modal-margin: #{$modal-dialog-margin};
+    --#{$prefix}modal-color: #{$modal-content-color};
+    --#{$prefix}modal-bg: #{$modal-content-bg};
+    --#{$prefix}modal-border-color: #{$modal-content-border-color};
+    --#{$prefix}modal-border-width: #{$modal-content-border-width};
+    --#{$prefix}modal-border-radius: #{$modal-content-border-radius};
+    --#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-xs};
+    --#{$prefix}modal-inner-border-radius: #{$modal-content-inner-border-radius};
+    --#{$prefix}modal-header-padding-x: #{$modal-header-padding-x};
+    --#{$prefix}modal-header-padding-y: #{$modal-header-padding-y};
+    --#{$prefix}modal-header-padding: #{$modal-header-padding}; // Todo in v6: Split this padding into x and y
+    --#{$prefix}modal-header-border-color: #{$modal-header-border-color};
+    --#{$prefix}modal-header-border-width: #{$modal-header-border-width};
+    --#{$prefix}modal-title-line-height: #{$modal-title-line-height};
+    --#{$prefix}modal-footer-gap: #{$modal-footer-margin-between};
+    --#{$prefix}modal-footer-bg: #{$modal-footer-bg};
+    --#{$prefix}modal-footer-border-color: #{$modal-footer-border-color};
+    --#{$prefix}modal-footer-border-width: #{$modal-footer-border-width};
+    
+    --#{$prefix}backdrop-zindex: #{$zindex-modal-backdrop};
+    --#{$prefix}backdrop-bg: #{$modal-backdrop-bg};
+    --#{$prefix}backdrop-opacity: #{$modal-backdrop-opacity};
+    
+    $modal-inner-padding:               $spacer;
+    
+    $modal-footer-margin-between:       .5rem;
+    
+    $modal-dialog-margin:               .5rem;
+    $modal-dialog-margin-y-sm-up:       1.75rem;
+    
+    $modal-title-line-height:           $line-height-base;
+    
+    $modal-content-color:               null;
+    $modal-content-bg:                  var(--#{$prefix}body-bg);
+    $modal-content-border-color:        var(--#{$prefix}border-color-translucent);
+    $modal-content-border-width:        var(--#{$prefix}border-width);
+    $modal-content-border-radius:       var(--#{$prefix}border-radius-lg);
+    $modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+    $modal-content-box-shadow-xs:       var(--#{$prefix}box-shadow-sm);
+    $modal-content-box-shadow-sm-up:    var(--#{$prefix}box-shadow);
+    
+    $modal-backdrop-bg:                 $black;
+    $modal-backdrop-opacity:            .5;
+    
+    $modal-header-border-color:         var(--#{$prefix}border-color);
+    $modal-header-border-width:         $modal-content-border-width;
+    $modal-header-padding-y:            $modal-inner-padding;
+    $modal-header-padding-x:            $modal-inner-padding;
+    $modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+    
+    $modal-footer-bg:                   null;
+    $modal-footer-border-color:         $modal-header-border-color;
+    $modal-footer-border-width:         $modal-header-border-width;
+    
+    $modal-sm:                          300px;
+    $modal-md:                          500px;
+    $modal-lg:                          800px;
+    $modal-xl:                          1140px;
+    
+    $modal-fade-transform:              translate(0, -50px);
+    $modal-show-transform:              none;
+    $modal-transition:                  transform .3s ease-out;
+    $modal-scale-transform:             scale(1.02);
+}
+
+--#{$prefix}modal-zindex: #{$zindex-modal};
+--#{$prefix}modal-width: #{$modal-md};
+--#{$prefix}modal-padding: #{$modal-inner-padding};
+--#{$prefix}modal-margin: #{$modal-dialog-margin};
+--#{$prefix}modal-color: #{$modal-content-color};
+--#{$prefix}modal-bg: #{$modal-content-bg};
+--#{$prefix}modal-border-color: #{$modal-content-border-color};
+--#{$prefix}modal-border-width: #{$modal-content-border-width};
+--#{$prefix}modal-border-radius: #{$modal-content-border-radius};
+--#{$prefix}modal-box-shadow: #{$modal-content-box-shadow-xs};
+--#{$prefix}modal-inner-border-radius: #{$modal-content-inner-border-radius};
+--#{$prefix}modal-header-padding-x: #{$modal-header-padding-x};
+--#{$prefix}modal-header-padding-y: #{$modal-header-padding-y};
+--#{$prefix}modal-header-padding: #{$modal-header-padding}; // Todo in v6: Split this padding into x and y
+--#{$prefix}modal-header-border-color: #{$modal-header-border-color};
+--#{$prefix}modal-header-border-width: #{$modal-header-border-width};
+--#{$prefix}modal-title-line-height: #{$modal-title-line-height};
+--#{$prefix}modal-footer-gap: #{$modal-footer-margin-between};
+--#{$prefix}modal-footer-bg: #{$modal-footer-bg};
+--#{$prefix}modal-footer-border-color: #{$modal-footer-border-color};
+--#{$prefix}modal-footer-border-width: #{$modal-footer-border-width};
+
+--#{$prefix}backdrop-zindex: #{$zindex-modal-backdrop};
+--#{$prefix}backdrop-bg: #{$modal-backdrop-bg};
+--#{$prefix}backdrop-opacity: #{$modal-backdrop-opacity};
+
+{$modal-inner-padding:               $spacer;
+
+$modal-footer-margin-between:       .5rem;
+
+$modal-dialog-margin:               .5rem;
+$modal-dialog-margin-y-sm-up:       1.75rem;
+
+$modal-title-line-height:           $line-height-base;
+
+$modal-content-color:               null;
+$modal-content-bg:                  var(--#{$prefix}body-bg);
+$modal-content-border-color:        var(--#{$prefix}border-color-translucent);
+$modal-content-border-width:        var(--#{$prefix}border-width);
+$modal-content-border-radius:       var(--#{$prefix}border-radius-lg);
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width);
+$modal-content-box-shadow-xs:       var(--#{$prefix}box-shadow-sm);
+$modal-content-box-shadow-sm-up:    var(--#{$prefix}box-shadow);
+
+$modal-backdrop-bg:                 $black;
+$modal-backdrop-opacity:            .5;
+
+$modal-header-border-color:         var(--#{$prefix}border-color);
+$modal-header-border-width:         $modal-content-border-width;
+$modal-header-padding-y:            $modal-inner-padding;
+$modal-header-padding-x:            $modal-inner-padding;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x; // Keep this for backwards compatibility
+
+$modal-footer-bg:                   null;
+$modal-footer-border-color:         $modal-header-border-color;
+$modal-footer-border-width:         $modal-header-border-width;
+
+$modal-sm:                          300px;
+$modal-md:                          500px;
+$modal-lg:                          800px;
+$modal-xl:                          1140px;
+
+$modal-fade-transform:              translate(0, -50px);
+$modal-show-transform:              none;
+$modal-transition:                  transform .3s ease-out;
+$modal-scale-transform:             scale(1.02);
+}
 
 /* FOOTER */
 
@@ -743,4 +879,6 @@ font-size: 1.2rem;
     margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
     font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
 }
+
+
 
