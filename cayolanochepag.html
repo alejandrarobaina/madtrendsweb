@@ -40,7 +40,7 @@
 
 
     <!-- Inserción del favicon -->
-    <link href="img/home/madtrendslogorosa.png" rel="icon" type="image/home/png">
+    <link href="img/home/madtrendslogofavicon.png" rel="icon" type="image/home/png">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -141,12 +141,6 @@
         </div>
     </section>
 
-    <section id="growingbrands">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-            </div>
-        </div>
-
 
         <div class="brandsimages">
         <div class="container-fluid">
@@ -155,41 +149,32 @@
                     <div class="image-container">
                         <img src="img/noche/11.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
                         <div class="overlay">
-                            <h2>MALASAÑA</h2>
-                           <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Leer Artículo
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="staticBackdropLabel">MALASAÑA</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            En Malasaña, hay un montón de bares baratos donde la gente más artística y en tendencia se junta para tomar algo en bares llenos de ambiente y típicos de la cultura copística de la ciudad. 
-
-            Como recomendación, te invitamos a probar Gilda Haus para un copeo electrónico y el Bar La Estrella como el sitio top para tomar copas con lo más de lo más español. 
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
-    </div>
-  </div>
-                            
-                         
-                            <!-- Full screen modal -->
-<div class="modal-dialog modal-fullscreen-sm-down">
-    
-  </div>
+                            <h2>MALASAÑA</h2> 
+                            <!-- Botón para abrir el modal -->
+                            <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal">LEER ARTÍCULO</a>
                         </div>
                     </div>
                 </div>
+                
+                <!-- Modal de Bootstrap -->
+                <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content text-center" style="padding: 20px;">
+                            <div class="modal-header border-0">
+                                <h5 class="modal-title w-100 text-black" id="modalTitle">MALASAÑA</h5>
+                            </div>
+                            <div class="modal-body custom-body-width">
+                                <p class="text-black">En Malasaña, hay un montón de bares baratos donde la gente más artística y en tendencia se junta para tomar algo en bares llenos de ambiente y típicos de la cultura copística de la ciudad. 
+
+                                    <br><br> Como recomendación, te invitamos a probar <span class="fw-bold text-black">Gilda Haus</span> para un copeo electrónico y el <span class="fw-bold text-black">Bar La Estrella</span> como el sitio top para tomar copas con lo más de lo más español. </p>
+                            </div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-dark w-100 text-white" data-bs-dismiss="modal">VIDA NOCTURNA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+      
                 <div class="col-12 p-0">
                     <div class="image-container">
                         <img src="img/noche/n2.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
