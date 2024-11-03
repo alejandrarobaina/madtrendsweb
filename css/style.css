@@ -1,7 +1,7 @@
 *{
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: var(--fuenteGeneral);
     scroll-behavior: smooth;
     color: white;
 }
@@ -34,10 +34,9 @@ h1 ,
 h2,
 h3, 
 h4 {
-    color: var(--color1);
-    font-family: var(--fuenteTitulos);
     font-weight: 700;
     font-style: normal;
+    font-family: var(--fuenteTitulos);
 }
 
 .btn {
@@ -176,14 +175,7 @@ color: var(--color3) !important;
     
 }
 
-header > h1 {
-    font-size: 12vw;
-    z-index: 1;
-    font-weight: bold;
-    color: var(--color1);
-    mix-blend-mode: difference 20%;
-    z-index: 990;
-}
+
 
 video { 
     position: absolute;
@@ -530,9 +522,9 @@ h9 {
 }
 
 .btn-dark:hover {
-    background-color: #ff0e87; /* Fondo oscuro */
+    background-color: var(--background-color3); /* Fondo oscuro */
     color: #fff; /* Texto blanco */ 
-    border-color: #ff0e87;
+    border-color: var(--color3);
 }
 
 
