@@ -109,7 +109,7 @@ body {
     z-index: 996;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 700px) 
 .menu:hover {
     background-color: white;
     z-index: 995;
@@ -161,7 +161,7 @@ body {
 .submenu .nav-item {
     list-style: none;
 }
-}
+
 
 .btn {
     border-radius: 0;
