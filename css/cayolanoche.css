@@ -85,8 +85,6 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
-
-
 .my-color-btn {
     background-color: black;
 }
@@ -241,256 +239,17 @@ div#fashion {
     z-index: 800;
 }
 
-
-
-
-
-
-/* SECCIONES */
-
-/* NUESTRA HISTORIA */
-
-#historia {
-    padding: 20%; /* Padding vertical de 50px */
+.custom-modal-btn {
+    background-color: black; /* Color inicial */
+    color: white; /* Color inicial del texto */
 }
 
-.white-text {
-    color: white; /* Texto blanco */
+.custom-modal-btn:hover {
+    background-color: rgb(255, 2, 103); /* Cambia a rosa al hacer hover */
+    color: white; /* Asegura que el color del texto sea visible */
 }
 
 
-
-/* VIENE Y VA */
-
-#vieneyva {
-    padding: 50px 0; /* Espacio superior e inferior */
-    
-}
-
-.text-left {
-    margin-left: 8%; /* Espacio adicional desde el margen izquierdo */
-}
-
-.arrow {
-    margin-left: 5px; /* Espacio entre el texto y la flecha */
-    color: white; /* Color de la flecha */
-}
-
-.container-cards {
-    padding: 5%;
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-.card {
-    transition: transform 0.3s ease; /* Suaviza la transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
-    border: none; /* Sin borde */
-    background-color: transparent; /* Sin color de fondo */
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-/* Estilo para la tarjeta expandida */
-.card:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta al hacer hover */
-}
-
-/* Estilo para reducir las tarjetas adyacentes */
-.card:not(:hover) {
-    transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
-}
-
-/* DAILY INSPO */
-.inspotextcontainer {
-    padding: 20%;
-}
-
-/* GROWING BRANDS */
-
-.brandsimages {
-    padding-top: 7%;
-    padding-bottom: 7%;
-}
-
-.full-width-image {
-    width: 100%; /* Abarca todo el ancho de la pantalla */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacio en blanco debajo de la imagen */
-}
-
-.image-container {
-    position: relative; /* Para el posicionamiento del overlay */
-}
-
-/* Capa de degradado */
-.image-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.435)); /* Degradado de blanco a negro con 20% de opacidad */
-    z-index: 1; /* Colocar detrás del contenido de la imagen */
-}
-
-
-.overlay {
-    position: absolute;
-    bottom: 10%; /* Pegado a la parte inferior */
-    left: 50%;
-    transform: translateX(-50%); /* Centrar horizontalmente */
-    color: white; /* Color del texto */
-    text-align: center; /* Centrar texto */
-    z-index: 2; /* Asegura que el contenido esté por encima del degradado */
-}
-
-.overlay p, .overlay h2 {
-    margin: 2px; /* Eliminar márgenes */
-}
-
-.btn {
-    margin-top: 10px; /* Espacio entre el botón y el subtítulo */
-}
-
-.image-container {
-    position: relative;
-    overflow: hidden; /* Para que el zoom no se salga del contenedor */
-}
-
-.full-width-image {
-    width: 100%;
-    height: auto;
-    transition: transform 0.5s ease; /* Transición suave para el zoom */
-}
-
-.image-container:hover .full-width-image {
-    transform: scale(1.1); /* Hace zoom al 110% al hacer hover */
-}
-
-
-  
-/* CAYÓ LA NOCHE */
-
- #cayolanoche {
-    padding-bottom: 3%;
-    padding-bottom: 7%;
-} 
-
-.container-noche {
-    padding: 6%;  
-     
-}
-
-.container-texto {
-    padding-left:6%;
-}
-
-
-/* LATEST NEWS */
-
-.container-news {
-    padding: 5%;
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-.card-news {
-    transition: transform 0.3s ease; /* Suaviza la transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
-    border: none; /* Sin borde */
-    background-color: white; /* Sin color de fondo */
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-
-
-
-/* VIENE Y VA PÁGINA */
-#vieneyva {
-    padding-bottom: 3%;
-    padding-bottom: 7%;
-} 
-
-.container-vieneyva {
-    padding-left: 6%;
-    padding-right: 6%;
-    padding-top: 6%;
-    padding-bottom: 6%;
-     
-     
-}
-
-.container-texto {
-    padding-left: 6%;
-    padding-right: 6%;
-}
-
-#news {
-    padding-bottom: 3%;
-    padding-bottom: 7%;
-}
-
-/* LATEST NEWS */
-
-.container-news {
-    padding: 5%;
-    border-radius: 0; /* Sin esquinas redondeadas */
-}
-
-.card-body {
-    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
-    padding: 9%;
-}
-
-.card-news {
-    transition: transform 0.3s ease; /* Suaviza la transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
-    border: none; /* Sin borde */
-    background-color: white; /* Sin color de fondo */
-    border-radius: 0; /* Sin esquinas redondeadas */
-    color: #000000 !important;
-    margin-bottom: 20px; /* Margen inferior para separar las tarjetas */
-    height: 100%; /* Para que todas las tarjetas tengan la misma altura */
-    display: flex;
-    flex-direction: column;
-}
-
-.card-body {
-    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
-    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
-}
-
-.card-text {
-    font-weight: bold;
-    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
-    line-height: 1.5; /* Ajusta el interlineado */
-    letter-spacing: 10;
-}
-
-.card-title {
-    margin-bottom: 10px; /* Margen inferior para separar los elementos */
-    line-height: 1.5; /* Ajusta el interlineado */
-    margin-bottom: 10px; /* Margen inferior para separar los elementos */
-}
-
-h9 {
-    font-size: 0.9rem; /* Ajuste del tamaño de la fuente para h9 */
-    color: gray; /* Cambiar el color del texto */
-    line-height: 1.5; /* Ajusta el interlineado */
-}
-
-
-/* Asegurar que las tarjetas tengan la misma altura */
-.row-equal-height .col-md-4 {
-    display: flex;
-    flex-direction: column;
-}
-
-.row-equal-height .card-news {
-    flex: 1;
-}
 
 /* FOOTER */
 
@@ -505,10 +264,6 @@ h9 {
 .footer-logo {
     padding: 5%;
 }
-
-
-
-
 
 .footer-bottom {
     background-color: black;
@@ -584,6 +339,27 @@ font-size: 1.2rem;
 }
  
 
+
+
+/* CAYÓ LA NOCHE */
+
+#cayolanoche {
+    padding-bottom: 3%;
+    padding-bottom: 7%;
+} 
+
+.container-noche {
+    padding: 6%;  
+     
+}
+
+.container-texto {
+    padding-left:6%;
+}
+
+
+
+
 /* CAYÓ LA NOCHE PÁGINA */
 
 .brandsimages {
@@ -628,10 +404,6 @@ font-size: 1.2rem;
     margin: 2px; /* Eliminar márgenes */
 }
 
-.btn {
-    margin-top: 10px; /* Espacio entre el botón y el subtítulo */
-}
-
 .image-container {
     position: relative;
     overflow: hidden; /* Para que el zoom no se salga del contenedor */
@@ -663,6 +435,13 @@ font-size: 1.2rem;
     padding-left: 20px;
     padding-right: 20px;
 }
+
+.btn-dark:hover {
+    background-color: #ff0e87 !important; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */ 
+}
+
+
 
 
 /* FOOTER */
