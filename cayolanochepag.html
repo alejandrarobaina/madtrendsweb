@@ -22,8 +22,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
     <!-- CUSTOM CSS     -->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/style.css"/>
         
     <!-- JQUERY -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js" integrity="sha512-+k1pnlgt4F1H8L7t3z95o3/KO+o78INEcXTbnoJQ/F2VqDVhWoaiVml/OEHv9HsVgxUaVW+IbiZPUJQfF/YxZw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -45,7 +44,7 @@
 
 
     <!-- Inserción del favicon -->
-    <link href="img/home/madtrendslogorosa.png" rel="icon" type="image/home/png">
+    <link href="img/home/madtrendslogofavicon.png" rel="icon" type="image/home/png">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -69,11 +68,8 @@
     
     <header>
 
-        <div class="video-container">
-            <video poster="img/noche/nocheheader.jpeg" playsinline autoplay muted loop>
-                <source src="img/noche/nocheheader.jpeg" type="video/webm">
-            </video>
-
+        <div class="header-container">
+            <img src="img/noche/nocheheader.jpeg" alt="Imagen de Noche" class="full-width-header">
              <!-- Texto superpuesto -->
         <div class="overlay-text">
             <h1 class="text-start mb-2">CAYÓ LA NOCHE</h1>
@@ -133,9 +129,7 @@
                 
        
     </header>
-
       
-
     <section id="vidanocturna">
         <div class="container text-center">
             <h2 class="mb-4">VIDA NOCTURNA MADRILEÑA</h2>
@@ -144,14 +138,9 @@
         </div>
     </section>
 
-    <section id="growingbrands">
-        <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
-            </div>
-        </div>
-
 
         <div class="brandsimages">
+<<<<<<< HEAD
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 p-0">
@@ -197,22 +186,108 @@
                         <div class="overlay">
                             <h2>CHUECA</h2>
                             
+=======
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- Sección MALASAÑA -->
+                    <div class="col-12 p-0">
+                        <div class="image-container">
+                            <img src="img/noche/11.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
+                            <div class="overlay">
+                                <h2>MALASAÑA</h2>
+                                <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal1">LEER ARTÍCULO</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 p-0">
-                    <div class="image-container">
-                        <img src="img/noche/n3.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
-                        <div class="overlay">
-                            <h2>SALAMANCA</h2>
-                            <a href="#" class="btn btn-light me-2">LEER ARTÍCULO</a>
+            
+                    <!-- Modal para MALASAÑA -->
+                    <div class="modal fade" id="myModal1" tabindex="-1" aria-labelledby="modalTitle1" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content text-center" style="padding: 20px;">
+                                <div class="modal-header border-0">
+                                    <h2 class="modal-title w-100 text-black" id="modalTitle1">MALASAÑA</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-black">En Malasaña, hay un montón de bares baratos donde la gente más artística y en tendencia se junta para tomar algo en bares llenos de ambiente y típicos de la cultura copística de la ciudad. 
+
+                                        <br><br>Como recomendación, te invitamos a probar Gilda Haus para un copeo electrónico y el Bar La Estrella como el sitio top para tomar copas con lo más de lo más español. </p>
+                                </div>
+                                <div class="modal-footer border-0 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-dark me-2" data-bs-dismiss="modal">VIDA NOCTURNA</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Sección CHUECA -->
+                    <div class="col-12 p-0">
+                        <div class="image-container">
+                            <img src="img/noche/n2.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
+                            <div class="overlay">
+                                <h2>CHUECA</h2>
+                                <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal2">LEER ARTÍCULO</a>
+                            </div>
+>>>>>>> 4d8fec9d1c6c66783bdd3b1bd616459c78a20de3
+                        </div>
+                    </div>
+            
+                    <!-- Modal para CHUECA -->
+                    <div class="modal fade" id="myModal2" tabindex="-1" aria-labelledby="modalTitle2" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content text-center" style="padding: 20px;">
+                                <div class="modal-header border-0">
+                                    <h2 class="modal-title w-100 text-black" id="modalTitle2">CHUECA</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-black">Si te va el buen rollo y la diversión sin prejuicios, Chueca es tu lugar. 
+
+                                        <br><br>Este barrio icónico que acoge a fondo a la comunidad LGTBIQ+, no solo está lleno de color y celebración, si no que  tiene los brazos abiertos para vivir experiencias en las discotecas de moda del momento. La música varía desde el pop hasta la electrónica, así que hay algo for everyone. 
+                                        
+                                        <br><br>Pásate por Lucky Dragon, un bar clandestino de estilo grafitero japonés que te volará la cabeza. </p>
+                                </div>
+                                <div class="modal-footer border-0 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-dark me-2" data-bs-dismiss="modal">VIDA NOCTURNA</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Sección SALAMANCA -->
+                    <div class="col-12 p-0">
+                        <div class="image-container">
+                            <img src="img/noche/n3.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
+                            <div class="overlay">
+                                <h2>SALAMANCA</h2>
+                                <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal3">LEER ARTÍCULO</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <!-- Modal para SALAMANCA -->
+                    <div class="modal fade" id="myModal3" tabindex="-1" aria-labelledby="modalTitle3" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                            <div class="modal-content text-center" style="padding: 20px;">
+                                <div class="modal-header border-0">
+                                    <h2 class="modal-title w-100 text-black" id="modalTitle3">SALAMANCA</h2>
+                                </div>
+                                <div class="modal-body">
+                                    <p class="text-black">La zona más pija de la ciudad, también es el lugar ideal para salir de fiesta con las mayores influencias del momento. 
+
+                                        <br><br>Puedes conocer La Discoteca, donde recientemente ha sido vista la 
+                                        cantante Dua Lipa con su actual pareja (que ya habíamos visto anteriormente con su ex en el mismo lugar, Aaron Piper). 
+                                        
+                                        <br><br>También está Vandido, en plena calle de Goya y con un ambiente más adulto (+25) los fines de semana, donde podrás encontrarte tanto a 
+                                        Esther Expósito como a Mario Casas.</p>
+                                </div>
+                                <div class="modal-footer border-0 d-flex justify-content-center">
+                                    <button type="button" class="btn btn-dark me-2" data-bs-dismiss="modal">VIDA NOCTURNA</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-        </div>
-
+            
 
     </section>
    

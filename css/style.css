@@ -40,14 +40,6 @@ h4 {
     font-style: normal;
 }
 
-h1 {
-    font-size: 5rem; /* Aumentar tamaño del h1 */
-    
-}
-h3 {
-    font-size: 1.25rem; /* Disminuir tamaño del h3 */
-}
-
 .btn {
     margin: 5px !important;
 }
@@ -229,6 +221,22 @@ div#fashion {
     transform: translate(-50%, -50%); /* Centra el video */
 }
 
+/* Contenedor de la imagen */
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+
+}
+
+.full-width-header {
+    width: 100%;
+    height: 100%; /* La imagen se ajustará a la altura del contenedor */
+    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+}
+
+
 /* Texto superpuesto */
 .overlay-text {
     position: absolute; /* Para superponer el texto sobre el video */
@@ -239,10 +247,6 @@ div#fashion {
     padding-left: 7%; /* Espaciado a la izquierda */
     z-index: 800;
 }
-
-
-
-
 
 
 /* SECCIONES */
@@ -491,7 +495,21 @@ h9 {
 
 /* VIENE Y VA PÁGINA */
 
- 
+#vieneyva {
+    padding-bottom: 3%;
+    padding-bottom: 7%;
+} 
+
+.container-vieneyva {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+
+
+
+}
+    
 
 /* CAYÓ LA NOCHE PÁGINA */
 
@@ -499,6 +517,20 @@ h9 {
     padding: 20%; /* Padding vertical de 50px */
 }
 
+.modal-content {
+    border-radius: 0; /* Elimina las esquinas redondeadas */
+}
+
+.modal-body {
+ padding-right: 15%;
+ padding-left: 15%;
+}
+
+.btn-dark:hover {
+    background-color: #ff0e87; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */ 
+    border-color: #ff0e87;
+}
 
 
 
