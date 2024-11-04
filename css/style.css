@@ -100,7 +100,6 @@ color: var(--color3) !important;
 }
 
 
-
 @media (min-width: 700px) {
 .menu:hover {
     background-color: var(--background-color1);
@@ -618,4 +617,41 @@ font-size: 1.2rem;
 .form-btn:hover {
     background-color: var(--background-color3); 
     color: var(--color1); 
+}
+
+
+/* Responsive */
+
+/* iPad */
+@media (max-width: 1024px) { 
+.nav-link {
+    font-size: 12px;
+}
+
+.container-texto {
+    padding-right: 1%;
+    padding-left: 1%;
+}
+
+}
+
+
+/* iPad Mini */
+@media (max-width: 768px) { 
+    .nav-link {
+        font-size: 12px;
+    }
+    
+    .container-texto {
+        padding-right: 1%;
+        padding-left: 1%;
+    }
+    
+    }
+    
+
+
+/* Movil */
+@media (max-width: 768px) { 
+
 }
