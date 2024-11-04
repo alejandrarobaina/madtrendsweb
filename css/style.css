@@ -44,12 +44,13 @@ h4 {
 }
 
 .btn-light:hover {
-    background-color: var(--background-color3); /* Fondo oscuro */
-    color: var(--color1); /* Texto blanco */
+    background-color: var(--background-color3); 
+    color: var(--color1); 
     border-color: var(--color3);
     transition: 0.5s;
     
 }
+
 
 /* Header */
 
@@ -66,11 +67,11 @@ h4 {
 }
 
 .navbar-nav .nav-link {
-    padding: 10px 10px; /* Ajustar padding vertical y horizontal */
+    padding: 10px 10px; 
 }
 
 .navbar-nav .nav-item {
-    margin-right: 50px; /* Espacio entre los elementos */
+    margin-right: 50px; 
 } 
 
 .nav-link:hover {
@@ -81,23 +82,24 @@ color: var(--color3) !important;
     background-color: var(--background-color2);
 }
 
-/* Estilo para el contenedor principal del menú */
+
 .menu {
     position: relative;
-    z-index: 999;
-    
+    z-index: 999; 
 }
 
 .submenu {
     display: none;
     position: absolute;
-    top: 100%; /* Colocar justo debajo del navbar principal */
+    top: 100%; 
     left: 0;
     width: 100%;
-    background-color: var(--background-color1); /* Fondo del submenú */
+    background-color: var(--background-color1); 
     z-index: 1000;
     z-index: 996;
 }
+
+
 
 @media (min-width: 700px) {
 .menu:hover {
@@ -106,35 +108,33 @@ color: var(--color3) !important;
   } 
 
 .menu:hover .btn-light {
-    background-color: var(--background-color2); /* Fondo oscuro */
-    color: var(--color1); /* Texto blanco */
+    background-color: var(--background-color2); 
+    color: var(--color1); 
     border-color: var(--color2);
     
 }
 
 .menu:hover .btn-outline-light {
-    color: var(--color2); /* Texto oscuro */
-    border-color: none; /* Borde blanco */
+    color: var(--color2); 
+    border-color: none; 
 }
 
 .menu:hover .btn-light:hover {
-    background-color: var(--background-color3); /* Fondo oscuro */
-    color: var(--color1); /* Texto blanco */
+    background-color: var(--background-color3); 
+    color: var(--color1);
     border-color: var(--color3);
     
 }
 
 .menu:hover .btn-outline-light:hover {
-    color: var(--color3); /* Texto blanco */
+    color: var(--color3); 
     border-color: var(--color3);
 }
 
-/* Mostrar el submenú al hacer hover sobre el contenedor del menú */
 .menu:hover .submenu {
     display: block;
 }
 
-/* Estilos para los enlaces del submenú */
 .submenu .nav-link {
     padding: 10px 15px;
     color: #000000;
@@ -142,7 +142,7 @@ color: var(--color3) !important;
 }
 
 .submenu .navbar-nav {
-    flex-direction: row; /* Para que los elementos estén en una fila */
+    flex-direction: row; 
     justify-content: center;
     margin: 0;
     padding: 0;
@@ -153,6 +153,8 @@ color: var(--color3) !important;
 }
 }
 
+
+
 .btn {
     border-radius: 0;
 }
@@ -162,20 +164,8 @@ color: var(--color3) !important;
     z-index: 999;
 }
 .navbar-toggler {
-    border: none; /* Quitar el borde del botón */
+    border: none; 
 }
-
-/* Cambiar el color del icono del menú hamburguesa */
-.navbar-toggler-icon {
-    background-color: none; /* Color del icono del menú */
-}
-
-/* Mostrar el botón hamburguesa solo en pantallas pequeñas y al hacer hover en el navbar */
-@media (max-width: 700px) {
-    
-}
-
-
 
 video { 
     position: absolute;
@@ -194,49 +184,43 @@ div#fashion {
   justify-content: center;
 }
 
-
-/* Contenedor del video */
 .video-container {
-    position: relative; /* Asegúrate de que el contenedor sea relativo */
-    height: 100vh; /* Esto asegura que el video ocupe toda la altura del viewport */
-    overflow: hidden; /* Evita que el contenido salga del contenedor */
+    position: relative;
+    height: 100vh; 
+    overflow: hidden; 
 }
 
 .video-container video {
-    position: absolute; /* Posiciona el video dentro del contenedor */
+    position: absolute; 
     top: 50%;
     left: 50%;
-    min-width: 100%; /* Asegúrate de que cubra todo el ancho */
-    min-height: 100%; /* Asegúrate de que cubra toda la altura */
-    width: auto; /* Mantiene la proporción */
-    height: auto; /* Mantiene la proporción */
-    transform: translate(-50%, -50%); /* Centra el video */
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    transform: translate(-50%, -50%);
 }
 
-/* Contenedor de la imagen */
 .header-container {
     position: relative;
     width: 100%;
     height: 100vh;
     background-size: cover;
-
 }
 
 .full-width-header {
     width: 100%;
-    height: 100%; /* La imagen se ajustará a la altura del contenedor */
-    object-fit: cover; /* Asegura que la imagen se recorte correctamente */
+    height: 100%; 
+    object-fit: cover; 
 }
 
-
-/* Texto superpuesto */
 .overlay-text {
-    position: absolute; /* Para superponer el texto sobre el video */
-    top: 50%; /* Centrado verticalmente */
-    left: 0; /* Pegado al margen izquierdo */
-    transform: translateY(-50%); /* Ajusta para centrar verticalmente */
+    position: absolute; 
+    top: 50%; 
+    left: 0; 
+    transform: translateY(-50%); 
     color: var(--color1);
-    padding-left: 7%; /* Espaciado a la izquierda */
+    padding-left: 7%; 
     z-index: 800;
 }
 
@@ -244,27 +228,27 @@ div#fashion {
 /* SECCIONES */
 
 .text-right .btn-click {
-    color: var(--color1); /* Cambia el color del texto del botón */
+    color: var(--color1); 
     transition: 0.5s;
 }
 
 .text-right:hover .btn-click .arrow {
-    color: var(--color3); /* Cambia el color del ícono */
+    color: var(--color3); 
     transition: 0.5s;
 }
 
 .text-right:hover .btn-click {
-    color: var(--color3); /* Cambia el color del texto del botón */
+    color: var(--color3); 
     transition: 0.5s;
 }
 
 .text-right:hover .btn-click .arrow {
-    color: var(--color3); /* Cambia el color del ícono */
+    color: var(--color3); 
     transition: 0.5s;
 }
 
 .btn-link:hover {
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    text-decoration: none; 
     transition: 0.5s;
     color: var(--background-color3);
 }
@@ -273,7 +257,7 @@ div#fashion {
 /* NUESTRA HISTORIA */
 
 #historia {
-    padding: 20%; /* Padding vertical de 50px */
+    padding: 20%; 
 }
 
 .white-text {
@@ -285,41 +269,39 @@ div#fashion {
 /* VIENE Y VA */
 
 #vieneyva {
-    padding: 50px 0; /* Espacio superior e inferior */
-    
+    padding: 50px 0;   
 }
 
 .text-left {
-    margin-left: 8%; /* Espacio adicional desde el margen izquierdo */
+    margin-left: 8%;
 }
 
 .arrow {
-    margin-left: 5px; /* Espacio entre el texto y la flecha */
+    margin-left: 5px; 
     color: var(--color1);
 }
 
 .container-cards {
     padding: 5%;
-    border-radius: 0; /* Sin esquinas redondeadas */
+    border-radius: 0; 
 }
 
 .card {
-    transition: transform 0.3s ease; /* Suaviza la transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
-    border: none; /* Sin borde */
-    background-color: transparent; /* Sin color de fondo */
-    border-radius: 0; /* Sin esquinas redondeadas */
+    transition: transform 0.3s ease; 
+    cursor: pointer; 
+    margin: 10px; 
+    border: none; 
+    background-color: transparent; 
+    border-radius: 0; 
 }
 
-/* Estilo para la tarjeta expandida */
+
 .card:hover {
-    transform: scale(1.1); /* Aumenta el tamaño de la tarjeta al hacer hover */
+    transform: scale(1.1);
 }
 
-/* Estilo para reducir las tarjetas adyacentes */
 .card:not(:hover) {
-    transform: scale(0.9); /* Reduce el tamaño de las tarjetas no seleccionadas */
+    transform: scale(0.9); 
 }
 
 .card-text {
@@ -338,6 +320,8 @@ div#fashion {
     padding-bottom: 15%;
 }
 
+
+
 /* GROWING BRANDS */
 
 .brandsimages {
@@ -346,16 +330,15 @@ div#fashion {
 }
 
 .full-width-image {
-    width: 100%; /* Abarca todo el ancho de la pantalla */
-    height: auto; /* Mantiene la proporción de la imagen */
-    display: block; /* Elimina espacio en blanco debajo de la imagen */
+    width: 100%; 
+    height: auto; 
+    display: block; 
 }
 
 .image-container {
-    position: relative; /* Para el posicionamiento del overlay */
+    position: relative; 
 }
 
-/* Capa de degradado */
 .image-container::before {
     content: "";
     position: absolute;
@@ -363,42 +346,41 @@ div#fashion {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.435)); /* Degradado de blanco a negro con 20% de opacidad */
-    z-index: 1; /* Colocar detrás del contenido de la imagen */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.435)); /
+    z-index: 1; 
 }
-
 
 .overlay {
     position: absolute;
-    bottom: 10%; /* Pegado a la parte inferior */
+    bottom: 10%; 
     left: 50%;
-    transform: translateX(-50%); /* Centrar horizontalmente */
+    transform: translateX(-50%); 
     color: var(--color1);
-    text-align: center; /* Centrar texto */
-    z-index: 2; /* Asegura que el contenido esté por encima del degradado */
+    text-align: center; 
+    z-index: 2; 
 }
 
 .overlay p, .overlay h2 {
-    margin: 2px; /* Eliminar márgenes */
+    margin: 2px; 
 }
 
 .btn {
-    margin-top: 10px; /* Espacio entre el botón y el subtítulo */
+    margin-top: 10px; 
 }
 
 .image-container {
     position: relative;
-    overflow: hidden; /* Para que el zoom no se salga del contenedor */
+    overflow: hidden; 
 }
 
 .full-width-image {
     width: 100%;
     height: auto;
-    transition: transform 0.5s ease; /* Transición suave para el zoom */
+    transition: transform 0.5s ease; 
 }
 
 .image-container:hover .full-width-image {
-    transform: scale(1.1); /* Hace zoom al 110% al hacer hover */
+    transform: scale(1.1);
 }
 
 
@@ -424,54 +406,52 @@ div#fashion {
 
 .container-news {
     padding: 5%;
-    border-radius: 0; /* Sin esquinas redondeadas */
+    border-radius: 0; 
 }
 
 .card-body {
-    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
+    flex-grow: 1; 
     padding: 9%;
 }
 
 .card-news {
-    transition: transform 0.3s ease; /* Suaviza la transición */
-    cursor: pointer; /* Cambia el cursor al pasar sobre la tarjeta */
-    margin: 10px; /* Margen entre las tarjetas */
-    border: none; /* Sin borde */
+    transition: transform 0.3s ease; 
+    cursor: pointer;
+    margin: 10px; 
+    border: none; 
     background-color: var(--background-color1);
-    border-radius: 0; /* Sin esquinas redondeadas */
+    border-radius: 0; 
     color: var(--color2) !important;
-    margin-bottom: 20px; /* Margen inferior para separar las tarjetas */
-    height: 100%; /* Para que todas las tarjetas tengan la misma altura */
+    margin-bottom: 20px; 
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }
 
 .card-body {
-    flex-grow: 1; /* Permite que el cuerpo de la tarjeta crezca para ocupar el espacio disponible */
-    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
+    flex-grow: 1; 
+    margin-bottom: 5px; 
 }
 
 .card-text {
     font-weight: bold;
-    margin-bottom: 5px; /* Margen inferior para separar el subtítulo */
-    line-height: 1.5; /* Ajusta el interlineado */
+    margin-bottom: 5px; 
+    line-height: 1.5; 
     letter-spacing: 10;
 }
 
 .card-title {
-    margin-bottom: 10px; /* Margen inferior para separar los elementos */
-    line-height: 1.5; /* Ajusta el interlineado */
-    margin-bottom: 10px; /* Margen inferior para separar los elementos */
+    margin-bottom: 10px; 
+    line-height: 1.5; 
+    margin-bottom: 10px; 
 }
 
 h9 {
-    font-size: 0.9rem; /* Ajuste del tamaño de la fuente para h9 */
-    color: rgb(157, 157, 157); /* Cambiar el color del texto */
-    line-height: 1.5; /* Ajusta el interlineado */
+    font-size: 0.9rem; 
+    color: rgb(157, 157, 157); 
+    line-height: 1.5; 
 }
 
-
-/* Asegurar que las tarjetas tengan la misma altura */
 .row-equal-height .col-md-4 {
     display: flex;
     flex-direction: column;
@@ -480,9 +460,6 @@ h9 {
 .row-equal-height .card-news {
     flex: 1;
 }
-
-
-
 
 
 /* VIENE Y VA PÁGINA */
@@ -507,11 +484,11 @@ h9 {
 /* CAYÓ LA NOCHE PÁGINA */
 
 #vidanocturna {
-    padding: 25%; /* Padding vertical de 50px */
+    padding: 25%; 
 }
 
 .modal-content {
-    border-radius: 0; /* Elimina las esquinas redondeadas */
+    border-radius: 0; 
 }
 
 .modal-body {
@@ -520,8 +497,8 @@ h9 {
 }
 
 .btn-dark:hover {
-    background-color: var(--background-color3); /* Fondo oscuro */
-    color: #fff; /* Texto blanco */ 
+    background-color: var(--background-color3); 
+    color: var(--color1); 
     border-color: var(--color3);
 }
 
@@ -532,8 +509,8 @@ h9 {
 .footer-top {
     background-color: var(--background-color1);
     color: var(--color2) !important;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */
+    justify-content: center; 
+    align-items: center; 
     padding: 3%;
 }
 
@@ -560,14 +537,14 @@ h9 {
 }
 .footer-column {
     display: flex;
-    justify-content: center; /* Centra horizontalmente */
-    align-items: center; /* Centra verticalmente */  
+    justify-content: center; 
+    align-items: center;  
 }
 
 .list-column {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column; 
+    align-items: flex-start; 
 
 }
 
@@ -587,7 +564,7 @@ h9 {
 }
 
 .footer-column p {
-    font-size: 0.6rem; /* Ajusta el tamaño del texto aquí */
+    font-size: 0.6rem; 
     margin-bottom: 0 !important;
     color: var(--color1);
     text-decoration: underline;
@@ -603,42 +580,42 @@ h9 {
 
 .newsletter-column {
     display: flex;
-    flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
-    align-items: flex-start; /* Alinea los elementos a la izquierda */
+    flex-direction: column; 
+    align-items: flex-start; 
     margin-top: 1%;
 }
 
 .newsletter-column h5 {
-    margin-bottom: 15px; /* Espacio entre el título y el formulario */
+    margin-bottom: 15px; 
 font-size: 1.2rem;
 }
 
 .newsletter-column p {
-    margin-top: 15px; /* Espacio entre el formulario y el texto descriptivo */
-    font-size: 0.9rem; /* Ajusta el tamaño del texto según lo desees */
+    margin-top: 15px; 
+    font-size: 0.9rem; 
 }
 
 /* Estilos para los enlaces del submenú */
 .list-link {
     padding: 0;
     color: var(--color2);
-    line-height: 3; /* Ajusta el interlineado */
+    line-height: 3; 
     letter-spacing: 2px;
-    text-decoration: none; /* Quita el subrayado de los enlaces */
+    text-decoration: none; 
 }
 
 .form-control {
-    border-radius: 0; /* Elimina el redondeado del input */
+    border-radius: 0; 
 }
 
 .form-btn {
-    background-color: var(--background-color2); /* Cambia el color de fondo a negro */
+    background-color: var(--background-color2); 
     color: var(--color1); 
-    border: none; /* Sin borde */
-    transition: background-color 0.3s ease; /* Transición suave para el hover */
+    border: none; 
+    transition: background-color 0.3s ease; 
 }
 
 .form-btn:hover {
-    background-color: var(--background-color3); /* Cambia el color de fondo al hacer hover (gris oscuro) */
-    color: var(--color1); /* Asegúrate de que el color del texto se mantenga visible */
+    background-color: var(--background-color3); 
+    color: var(--color1); 
 }
