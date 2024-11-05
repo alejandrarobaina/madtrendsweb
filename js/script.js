@@ -62,13 +62,14 @@ $("#menu .fa-bars").click(function(){
 // CARRUSEL
 $(document).ready(function(){
     $('.slick-carousel').slick({
-        infinite: true, // Carrusel infinito
-        speed: 700, // Velocidad de transición
-        slidesToShow: 4.5, // Número de slides a mostrar
-        slidesToScroll: 1, // Número de slides a desplazar
-        autoplay: true, // Habilitar autoplay
-        autoplaySpeed: 100, // Intervalo en milisegundos (3 segundos)
-        responsive: [ // Responsividad
+        infinite: true, 
+        speed: 700, 
+        slidesToShow: 4.5, 
+        slidesToScroll: 1, 
+        autoplay: true, 
+        autoplaySpeed: 100, 
+        arrows: false, 
+        responsive: [ 
             {
                 breakpoint: 1024,
                 settings: {
