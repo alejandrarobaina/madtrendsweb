@@ -23,6 +23,7 @@ img {
     height: auto;
     object-fit: cover;
     margin-right: 0;
+    border-radius: 0 !important;
     
 }
 
@@ -314,7 +315,7 @@ div#fashion {
     margin: 10px; 
     border: none; 
     background-color: transparent; 
-    border-radius: 0; 
+    border-radius: 0 !important; 
 }
 
 
@@ -511,6 +512,7 @@ h9 {
 }
 .container-texto {
     padding-right: 6%;
+    padding-top: 6%;
 }
     
 
@@ -550,10 +552,6 @@ h9 {
 .footer-logo {
     padding: 5%;
 }
-
-
-
-
 
 .footer-bottom {
     background-color: var(--background-color2);
@@ -689,14 +687,13 @@ font-size: 1.2rem;
 
 
 /* iPad Mini */
-@media (max-width: 768px) { 
+@media (max-width: 767px) { 
     .nav-link {
         font-size: 12px;
     }
     
     .container-texto {
-        padding-right: 1%;
-        padding-left: 1%;
+        padding-top: 6%;
     }
 
     
@@ -705,9 +702,47 @@ font-size: 1.2rem;
 
 
 /* Movil */
- 
+@media (max-width: 450px) { 
 
+/* Cayó la Noche */
 
+#cayolanoche {
+    padding-bottom: 0 !important; 
+    padding-top: 7%;
+}
+.container-texto {
+    padding: 8%;
+}
+
+/* News */
+    
+    .container-news .container {
+        padding: 2%;
+    }
+    .card-news {
+        margin: 0 auto; /* Centra cada card */
+        margin-bottom: 1em;
+    }
+
+    .footer-direction {
+       padding-left: 2em;
+       padding-top: 1em;
+    }
+    
+    .text-left {
+        margin-left: 1em;
+    }
+    .newsletter-column {
+       padding-left: 2em;
+       padding-top: 2em;
+       padding-bottom: 1em;
+    }
+
+    .footer-column p {
+        font-size: 0.2em;
+    }
+    }
+    
 
 
 
