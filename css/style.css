@@ -812,24 +812,20 @@ font-size: 1.2rem;
     border-color: none;
 }
 
-/* Estilo del botón de menú hamburguesa */
+
 .navbar-toggler {
     border: none;
-    background-color: transparent; /* Fondo transparente para el icono */
-    color: var(--color1); /* Color del icono hamburguesa por defecto */
+    background-color: transparent;
 }
 
-/* Cambio de color del botón hamburguesa cuando se hace hover sobre el menú */
-.menu:hover .navbar-toggler {
-    background-color: var(--background-color2); /* Cambia el color de fondo del botón hamburguesa */
-    color: var(--color2); /* Cambia el color del icono hamburguesa */
+.menu:hover .navbar-toggler-icon {
+    fill: var(--color2);  /* Cambiar el color del icono a negro cuando se hace hover */
 }
 
-/* Asegurar que el submenú no se muestre al hacer hover en pantallas pequeñas */
-@media (max-width: 450px) {
-    .menu:hover .submenu {
-        display: none !important;
-    }
+.menu:hover .submenu {
+    display: none !important;
+}
+
 }
 
 
