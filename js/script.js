@@ -10,6 +10,21 @@ $("#menu .fa-bars").click(function(){
     $("#menu ul").css("left", "-100%");
   });
 
+// MENU HAMBURGUESA
+  document.addEventListener("DOMContentLoaded", function () {
+    const navbarToggler = document.querySelector(".navbar-toggler");
+    const navbarCollapse = document.querySelector("#navbarNav");
+
+    navbarToggler.addEventListener("click", function () {
+        // Si el submenú está abierto, se cierra al hacer clic
+        if (navbarCollapse.classList.contains("show")) {
+            navbarCollapse.classList.remove("show");
+        } else {
+            navbarCollapse.classList.add("show");
+        }
+    });
+});
+
 
 // LOGO MADTRENDS 
   $(document).ready(function() {

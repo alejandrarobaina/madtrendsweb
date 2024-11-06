@@ -709,18 +709,14 @@ font-size: 1.2rem;
     }
 
 
-    .navbar-toggler {
-        border: none;
-    }
-
-    .navbar-nav .nav-link {
-        font-size: 14px;  /* Disminuir el tamaño de los enlaces del submenú */
-    }
-
+   /* Estilos para los botones en pantallas pequeñas */
+@media (max-width: 450px) {
+    /* Botones a la derecha: desaparecen en pantallas pequeñas */
     .d-flex.justify-content-end {
-        display: none; /* Esconder los botones para pantallas pequeñas */
+        display: none; /* Esconder los botones en pantallas pequeñas */
     }
 
+    /* Cambiar el comportamiento de la navegación */
     .navbar-collapse {
         text-align: center;
         background-color: var(--background-color1); /* Fondo completo para el submenú */
@@ -741,17 +737,59 @@ font-size: 1.2rem;
         padding: 15px 0;
     }
 
+    /* Hacer que el submenú se despliegue solo al hacer clic */
     .navbar-collapse.show {
         display: block;
     }
 }
 
-/* Estilo para hover en enlaces (para pantallas grandes) */
+/* Estilo para pantallas grandes (más de 450px): el submenú se despliega al hacer hover */
+@media (min-width: 450px) {
+    .submenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--background-color1);
+        z-index: 1000;
+    }
+
+    .menu:hover .submenu {
+        display: block;
+    }
+
+    /* Ajustar el submenú para que los elementos se alineen en una fila */
+    .submenu .navbar-nav {
+        display: flex; /* Usar flexbox */
+        flex-direction: row; /* Alineación horizontal de los elementos */
+        justify-content: center; /* Centrar los elementos */
+        margin: 0;
+        padding: 0;
+    }
+
+    .submenu .nav-item {
+        list-style: none;
+        margin-right: 30px; /* Espacio entre los elementos */
+    }
+
+    .submenu .nav-link {
+        padding: 10px 15px;
+        color: #000000;
+        text-align: center;
+    }
+
+    .submenu .nav-link:hover {
+        color: var(--color3) !important;
+    }
+}
+
+/* Comportamiento de los enlaces al hacer hover */
 .nav-link:hover {
     color: var(--color3) !important;
 }
 
-/* Estilos para los botones dentro del menú */
+/* Ajustes adicionales para los botones */
 .menu:hover .btn-light {
     background-color: var(--background-color2); 
     color: var(--color1); 
@@ -766,26 +804,33 @@ font-size: 1.2rem;
 .menu:hover .btn-light:hover {
     background-color: var(--background-color3); 
     color: var(--color1);
-    border-color: var(--color3);
+    border-color: none;
 }
 
 .menu:hover .btn-outline-light:hover {
     color: var(--color3); 
-    border-color: var(--color3);
+    border-color: none;
 }
 
-/* Colapsar el submenú en pantallas grandes */
-@media (min-width: 700px) {
-    .navbar-collapse {
-        display: flex !important;
-        justify-content: center;
-    }
-
-    .submenu {
-        display: block;
-    }
+/* Estilo del botón de menú hamburguesa */
+.navbar-toggler {
+    border: none;
+    background-color: transparent; /* Fondo transparente para el icono */
+    color: var(--color1); /* Color del icono hamburguesa por defecto */
 }
 
+/* Cambio de color del botón hamburguesa cuando se hace hover sobre el menú */
+.menu:hover .navbar-toggler {
+    background-color: var(--background-color2); /* Cambia el color de fondo del botón hamburguesa */
+    color: var(--color2); /* Cambia el color del icono hamburguesa */
+}
+
+/* Asegurar que el submenú no se muestre al hacer hover en pantallas pequeñas */
+@media (max-width: 450px) {
+    .menu:hover .submenu {
+        display: none !important;
+    }
+}
 
 
 /* Historia */  
