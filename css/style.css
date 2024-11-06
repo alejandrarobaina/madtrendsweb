@@ -55,10 +55,6 @@ h4 {
 
 /* Header */
 
-/* .container {
-    margin: 0;
-    padding: 0;
-} */
 
 .d-flex.justify-content-between {
     gap: 2rem; /* Ajusta este valor para el espacio deseado */
@@ -711,6 +707,85 @@ font-size: 1.2rem;
     .container h2 {
         font-size: 20px;
     }
+
+
+    .navbar-toggler {
+        border: none;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px;  /* Disminuir el tamaño de los enlaces del submenú */
+    }
+
+    .d-flex.justify-content-end {
+        display: none; /* Esconder los botones para pantallas pequeñas */
+    }
+
+    .navbar-collapse {
+        text-align: center;
+        background-color: var(--background-color1); /* Fondo completo para el submenú */
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 1rem 0;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 15px 0;
+    }
+
+    .navbar-collapse.show {
+        display: block;
+    }
+}
+
+/* Estilo para hover en enlaces (para pantallas grandes) */
+.nav-link:hover {
+    color: var(--color3) !important;
+}
+
+/* Estilos para los botones dentro del menú */
+.menu:hover .btn-light {
+    background-color: var(--background-color2); 
+    color: var(--color1); 
+    border-color: var(--color2);
+}
+
+.menu:hover .btn-outline-light {
+    color: var(--color2); 
+    border-color: none; 
+}
+
+.menu:hover .btn-light:hover {
+    background-color: var(--background-color3); 
+    color: var(--color1);
+    border-color: var(--color3);
+}
+
+.menu:hover .btn-outline-light:hover {
+    color: var(--color3); 
+    border-color: var(--color3);
+}
+
+/* Colapsar el submenú en pantallas grandes */
+@media (min-width: 700px) {
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: center;
+    }
+
+    .submenu {
+        display: block;
+    }
+}
+
 
 
 /* Historia */  
