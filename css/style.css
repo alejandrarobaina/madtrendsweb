@@ -52,7 +52,6 @@ h4 {
     
 }
 
-
 /* Header */
 
 
@@ -708,9 +707,29 @@ font-size: 1.2rem;
         font-size: 20px;
     }
 
+    /* Asegúrate de que el icono de hamburguesa solo sea el SVG */
+.navbar-toggler {
+    border: none;
+    background-color: transparent; /* Fondo transparente */
+    padding: 0; /* Elimina cualquier padding que pueda interferir */
+}
 
-   /* Estilos para los botones en pantallas pequeñas */
-@media (max-width: 450px) {
+/* Eliminar el borde de enfoque y la sombra en el botón de menú hamburguesa */
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important; /* Elimina la sombra aplicada por Bootstrap */
+}
+
+.navbar-toggler:focus {
+    outline: none;  /* Elimina el contorno cuando se hace clic en el botón */
+}
+
+/* Elimina el fondo predeterminado del botón hamburguesa */
+.navbar-toggler-icon {
+    background: none !important; /* Elimina cualquier fondo predeterminado */
+    padding: 10%;
+}
+
     /* Botones a la derecha: desaparecen en pantallas pequeñas */
     .d-flex.justify-content-end {
         display: none; /* Esconder los botones en pantallas pequeñas */
@@ -813,13 +832,10 @@ font-size: 1.2rem;
 }
 
 
-.navbar-toggler {
-    border: none;
-    background-color: transparent;
-}
-
+/* Cambiar color del icono del menú hamburguesa */
 .menu:hover .navbar-toggler-icon {
-    fill: var(--color2);  /* Cambiar el color del icono a negro cuando se hace hover */
+    fill: var(--color2);  /* Cambiar el color del icono SVG al hacer hover */
+    
 }
 
 .menu:hover .submenu {
