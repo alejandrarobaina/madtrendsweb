@@ -643,65 +643,54 @@ font-size: 1.2rem;
 }
 
 
+
+
+
 /* Responsive */
-
-/* iPad */
-@media (max-width: 991px) { 
-.nav-link {
-    font-size: 12px;
-}
-
-.container-texto {
-    padding-right: 1%;
-    padding-left: 1%;
-}
-
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' fill='white' class='bi bi-list' viewBox='0 0 16 16'%3e%3cpath fill-rule='evenodd' d='M2.5 12a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z'/%3e%3c/svg%3e");
-}
-
-}
-
-
-/* Rango de 810px a 992px */
-@media (min-width: 810px) and (max-width: 992px) {
-    .container-cards .row {
-        justify-content: center; /* Mantén las tarjetas centradas */
-    }
-    .container-cards .col-md-4 {
-        max-width: 45%; /* Ajusta el ancho de las columnas para que no ocupen el espacio completo */
-        margin-bottom: 20px; /* Espacio entre las tarjetas */
-
-      
-    }
-}
-
-
-/* iPad Mini */
-@media (max-width: 767px) { 
-    .nav-link {
-        font-size: 12px;
-    }
-    
-    .container-texto {
-        padding-top: 6%;
-    }
-
-    
-    }
-    
-
 
 /* Movil */
 @media (max-width: 450px) { 
 
-    h1 {
+h1 {
         font-size: 40px;
-    }
+}
 
-    .container h2 {
+.container h2 {
         font-size: 20px;
-    }
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; /* Coloca el submenú justo debajo del menú principal */
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Fondo opcional */
+    box-shadow: none !important;
+}
+
+/* Muestra el submenú al hacer hover sobre el navbar */
+.navbar:hover .submenu {
+    display: flex;
+}
+
+/* Estilo de los elementos del submenú como fila y centrados */
+.submenu .nav-item {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+}
+
+.submenu .nav-link {
+    color: #333; /* Color del texto */
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+/* Alinea el submenú en el centro de la pantalla */
+.navbar-nav {
+    justify-content: center;
+}
 
     /* Asegúrate de que el icono de hamburguesa solo sea el SVG */
 .navbar-toggler {
@@ -731,35 +720,93 @@ font-size: 1.2rem;
 }
 
     /* Botones a la derecha: desaparecen en pantallas pequeñas */
-    .d-flex.justify-content-end {
+.d-flex.justify-content-end {
         display: none; /* Esconder los botones en pantallas pequeñas */
-    }
+}
 
     /* Cambiar el comportamiento de la navegación */
-    .navbar-collapse {
+.navbar-collapse {
         text-align: center;
         background-color: var(--background-color1); /* Fondo completo para el submenú */
         width: 100%;
         padding: 2rem 0;
-    }
+}
 
-    .navbar-nav {
+.navbar-nav {
         flex-direction: column;
-    }
+}
 
-    .navbar-nav .nav-item {
+.navbar-nav .nav-item {
         margin: 1rem 0;
-    }
+}
 
-    .navbar-nav .nav-link {
+.navbar-nav .nav-link {
         font-size: 18px;
         padding: 15px 0;
-    }
+}
 
-    /* Hacer que el submenú se despliegue solo al hacer clic */
-    .navbar-collapse.show {
+/* Hacer que el submenú se despliegue solo al hacer clic */
+.navbar-collapse.show {
         display: block;
-    }
+}
+
+
+
+/* Historia */  
+#historia {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+
+/* Daily Inspo */
+
+.inspotextcontainer {
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+/* Cayó la Noche */
+
+#cayolanoche {
+padding-bottom: 0 !important; 
+padding-top: 7%;
+}
+.container-texto {
+padding: 8%;
+}
+
+/* News */
+
+.container-news .container {
+    padding: 2%;
+}
+.card-news {
+    margin: 0 auto; /* Centra cada card */
+    margin-bottom: 1em;
+}
+
+.footer-direction {
+   padding-left: 2em;
+   padding-top: 1em;
+}
+
+.text-left {
+    margin-left: 1em;
+}
+.newsletter-column {
+   padding-left: 2em;
+   padding-top: 2em;
+   padding-bottom: 1em;
+}
+
+.footer-column p {
+    font-size: 0.2em;
+}
 
     
 }
@@ -770,98 +817,10 @@ font-size: 1.2rem;
 /* Solo afecta a pantallas mayores a 450px */
 @media (min-width: 450px) {
     /* Oculta el submenú por defecto */
-    .submenu {
-        display: none;
-        position: absolute;
-        top: 100%; /* Coloca el submenú justo debajo del menú principal */
-        left: 0;
-        width: 100%;
-        background-color: #fff; /* Fondo opcional */
-        padding: 10px 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    /* Muestra el submenú al hacer hover sobre el navbar */
-    .navbar:hover .submenu {
-        display: flex;
-    }
-
-    /* Estilo de los elementos del submenú como fila y centrados */
-    .submenu .nav-item {
-        display: inline-block;
-        flex: 1;
-        text-align: center;
-    }
     
-    .submenu .nav-link {
-        color: #333; /* Color del texto */
-        padding: 10px;
-        text-transform: uppercase;
-    }
-
-    /* Alinea el submenú en el centro de la pantalla */
-    .navbar-nav {
-        justify-content: center;
-    }
 }
 
 
-/* Historia */  
-    #historia {
-        padding-right: 10%;
-        padding-left: 10%;
-        padding-top: 20%;
-        padding-bottom: 20%;
-    }
-
-
-/* Daily Inspo */
-
-    .inspotextcontainer {
-        padding-right: 10%;
-        padding-left: 10%;
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-
-/* Cayó la Noche */
-
-#cayolanoche {
-    padding-bottom: 0 !important; 
-    padding-top: 7%;
-}
-.container-texto {
-    padding: 8%;
-}
-
-/* News */
-    
-    .container-news .container {
-        padding: 2%;
-    }
-    .card-news {
-        margin: 0 auto; /* Centra cada card */
-        margin-bottom: 1em;
-    }
-
-    .footer-direction {
-       padding-left: 2em;
-       padding-top: 1em;
-    }
-    
-    .text-left {
-        margin-left: 1em;
-    }
-    .newsletter-column {
-       padding-left: 2em;
-       padding-top: 2em;
-       padding-bottom: 1em;
-    }
-
-    .footer-column p {
-        font-size: 0.2em;
-    }
-    
     
 
 
