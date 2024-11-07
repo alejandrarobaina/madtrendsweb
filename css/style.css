@@ -74,10 +74,6 @@ h4 {
     padding: 10px 10px; 
 }
 
-.navbar-nav .nav-item {
-    margin-right: 50px; 
-} 
-
 .nav-link:hover {
 color: var(--color3) !important;
 }
