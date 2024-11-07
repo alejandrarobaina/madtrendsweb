@@ -726,6 +726,10 @@ font-size: 1.2rem;
     padding: 10%;
 }
 
+.navbar:hover .navbar-toggler-icon {
+    filter: invert(100%);
+}
+
     /* Botones a la derecha: desaparecen en pantallas pequeñas */
     .d-flex.justify-content-end {
         display: none; /* Esconder los botones en pantallas pequeñas */
