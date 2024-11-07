@@ -641,6 +641,13 @@ font-size: 1.2rem;
 
 /* Responsive */
 
+/* Ordenador */
+@media (max-width: 1920px) { 
+    
+       
+}
+
+
 /* Movil */
 @media (max-width: 450px) { 
 
@@ -726,12 +733,7 @@ h1 {
 /* Cambiar el color del icono cuando se hace hover sobre el navbar */
 .navbar:hover .navbar-toggler i {
     color: black;    /* Color del icono al hacer hover */
-}
-
-
-
-
- 
+} 
 
     /* Botones a la derecha: desaparecen en pantallas pequeñas */
 .d-flex.justify-content-end {
