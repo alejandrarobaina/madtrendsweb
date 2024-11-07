@@ -29,6 +29,7 @@ img {
 
 body {
     background-color: var(--background-color2);
+
 }
 
 h1 ,
@@ -651,6 +652,7 @@ h1 {
         font-size: 20px;
 }
 
+
 .submenu {
     display: none;
     position: absolute;
@@ -684,7 +686,28 @@ h1 {
     justify-content: center;
 }
 
+/* Eliminar el margen predeterminado del botón hamburguesa */
+.navbar-toggler {
+    margin: 0 !important; /* Elimina cualquier margen aplicado */
+    padding: 0; /* Si necesitas eliminar también el padding */
+}
 
+/* Eliminar el borde y la sombra al hacer clic en el botón hamburguesa */
+.navbar-toggler:focus {
+    outline: none !important; /* Elimina el contorno */
+    box-shadow: none !important; /* Elimina la sombra de enfoque */
+}
+
+/* También asegurarte de que el icono del botón hamburguesa no tenga borde */
+.navbar-toggler {
+    border: none !important; /* Elimina el borde que genera Bootstrap */
+    background-color: transparent; /* Si no deseas un fondo */
+}
+
+/* Asegurarse de que el icono sea visible al hacer hover sobre el navbar */
+.navbar:hover .navbar-toggler {
+    display: block;
+}
 
 /* Ocultar el icono predeterminado */
 .navbar-toggler-icon {
@@ -696,6 +719,8 @@ h1 {
     font-size: 30px; /* Tamaño del icono */
     color: white;    /* Color del icono en su estado normal */
     transition: color 0.3s ease;
+    margin: 0 !important; /* Elimina cualquier margen aplicado */
+    padding: 0; /* Si necesitas eliminar también el padding */
 }
 
 /* Cambiar el color del icono cuando se hace hover sobre el navbar */

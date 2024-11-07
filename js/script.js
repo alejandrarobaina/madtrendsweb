@@ -26,6 +26,7 @@ $("#menu .fa-bars").click(function(){
 });
 
 
+
 // LOGO MADTRENDS 
   $(document).ready(function() {
     const $logo = $('#logo');

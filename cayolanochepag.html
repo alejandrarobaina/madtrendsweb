@@ -75,56 +75,57 @@
             <p class="text-start mb-0">De Malasaña a Salamanca, te contamos los lugares <br> más top para salir esta temporada.</p>
         </div>
 
-            <div class="menu">
-                <!-- NAVBAR PRINCIPAL -->
-                <nav class="navbar navbar-expand-lg fixed-top">
-                    <div class="container-fluid d-flex align-items-center">
-                        <!-- Botón de menú hamburguesa -->
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-    
-                        <!-- Espacio a la izquierda para centrar el logo -->
-                        <div class="d-flex flex-grow-1"></div>
-                        <!-- Logo centrado -->
-                        <a class="navbar-brand mx-auto" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);">
-                            <img id="logo" src="img/home/madtrendslogoblanco.png" alt="MadTrends" class="img-fluid" style="max-height: 10%;">
-                        </a>
-                        <!-- Botones pegados al margen derecho -->
-                        <div class="d-flex flex-grow-1 justify-content-end">
-                            <button class="btn btn-light me-2">SUBSCRIBE</button>
-                            <button class="btn btn-outline-light">SIGN IN</button>
-                        </div>
-                    </div>
-                    <!-- SUBMENÚ -->
-                <div class="submenu navbar-expand-lg">
-                    <div class="container-fluid">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#historia" onclick="closeMenu()">NUESTRA HISTORIA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#vieneyva" onclick="closeMenu()">VIENE Y VA</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#dailyinspo" onclick="closeMenu()">DAILY INSPO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#growingbrands" onclick="closeMenu()">GROWING BRANDS</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#cayolanoche" onclick="closeMenu()">CAYÓ LA NOCHE</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#news" onclick="closeMenu()">LATEST NEWS</a>
-                            </li>
-                        </ul>
+        <div class="menu">
+            <!-- NAVBAR PRINCIPAL -->
+            <nav class="navbar navbar-expand-lg fixed-top">
+                <div class="container-fluid d-flex align-items-center">
+                    <!-- Botón de menú hamburguesa -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <!-- Aquí reemplazas el SVG de Bootstrap con el ícono que prefieras -->
+                        <i class="fas fa-bars"></i> <!-- Usando Font Awesome como ejemplo -->
+                    </button>
+        
+                    <!-- Espacio entre el logo y los botones -->
+                    <div class="d-flex flex-grow-1"></div>
+        
+                    <!-- Logo -->
+                    <a class="navbar-brand mx-auto" href="#" style="position: absolute; left: 50%; transform: translateX(-50%);">
+                        <img id="logo" src="img/home/madtrendslogoblanco.png" alt="MadTrends" class="img-fluid" style="max-height: 10%;">
+                    </a>
+        
+                    <!-- Botones de SUSCRÍBETE y ENTRAR (solo visibles en pantallas grandes) -->
+                    <div class="d-flex flex-grow-1 justify-content-end d-none d-lg-flex">
+                        <button class="btn btn-light me-2">SUBSCRIBE</button>
+                        <button class="btn btn-outline-light">SIGN IN</button>
                     </div>
                 </div>
-            </div> 
+        
+                <!-- SUBMENÚ (COLAPSABLE) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav flex-column w-100">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#historia">NUESTRA HISTORIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#vieneyva">VIENE Y VA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#dailyinspo">DAILY INSPO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#growingbrands">GROWING BRANDS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cayolanoche">CAYÓ LA NOCHE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#news">LATEST NEWS</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-                </nav>
-              
+        
                 
        
     </header>
@@ -325,6 +326,13 @@
   <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="js/script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Scripts de Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+  <!-- SCRIPT DE SLICK -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
   
   </body>
   
