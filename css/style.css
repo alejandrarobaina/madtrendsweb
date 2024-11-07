@@ -42,6 +42,7 @@ h4 {
 
 .btn {
     margin: 5px !important;
+    border-radius: 0;
 }
 
 .btn-light:hover {
@@ -99,8 +100,6 @@ color: var(--color3) !important;
     z-index: 996;
 }
 
-
-@media (min-width: 700px) {
 .menu:hover {
     background-color: var(--background-color1);
     z-index: 995;
@@ -149,13 +148,6 @@ color: var(--color3) !important;
 
 .submenu .nav-item {
     list-style: none;
-}
-}
-
-
-
-.btn {
-    border-radius: 0;
 }
 
 .navbar:hover {
@@ -692,32 +684,29 @@ h1 {
     justify-content: center;
 }
 
-    /* Asegúrate de que el icono de hamburguesa solo sea el SVG */
-.navbar-toggler {
-    border: none;
-    background-color: transparent; /* Fondo transparente */
-    padding: 0; /* Elimina cualquier padding que pueda interferir */
-}
 
-/* Eliminar el borde de enfoque y la sombra en el botón de menú hamburguesa */
-.navbar-toggler:focus {
-    outline: none !important;
-    box-shadow: none !important; /* Elimina la sombra aplicada por Bootstrap */
-}
 
-.navbar-toggler:focus {
-    outline: none;  /* Elimina el contorno cuando se hace clic en el botón */
-}
-
-/* Elimina el fondo predeterminado del botón hamburguesa */
+/* Ocultar el icono predeterminado */
 .navbar-toggler-icon {
-    background: none !important; /* Elimina cualquier fondo predeterminado */
-    padding: 10%;
+    display: none;
 }
 
-.navbar:hover .navbar-toggler-icon {
-    filter: invert(100%);
+/* Estilo para el ícono personalizado */
+.navbar-toggler i {
+    font-size: 30px; /* Tamaño del icono */
+    color: white;    /* Color del icono en su estado normal */
+    transition: color 0.3s ease;
 }
+
+/* Cambiar el color del icono cuando se hace hover sobre el navbar */
+.navbar:hover .navbar-toggler i {
+    color: black;    /* Color del icono al hacer hover */
+}
+
+
+
+
+ 
 
     /* Botones a la derecha: desaparecen en pantallas pequeñas */
 .d-flex.justify-content-end {
@@ -749,8 +738,6 @@ h1 {
 .navbar-collapse.show {
         display: block;
 }
-
-
 
 /* Historia */  
 #historia {
@@ -808,15 +795,6 @@ padding: 8%;
     font-size: 0.2em;
 }
 
-    
-}
-
-
-
-
-/* Solo afecta a pantallas mayores a 450px */
-@media (min-width: 450px) {
-    /* Oculta el submenú por defecto */
     
 }
 
