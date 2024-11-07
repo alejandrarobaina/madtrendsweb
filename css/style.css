@@ -735,6 +735,7 @@ h1 {
     color: black;    /* Color del icono al hacer hover */
 } 
 
+
     /* Botones a la derecha: desaparecen en pantallas pequeñas */
 .d-flex.justify-content-end {
         display: none; /* Esconder los botones en pantallas pequeñas */
