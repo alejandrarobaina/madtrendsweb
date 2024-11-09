@@ -40,7 +40,7 @@
  
 
     <!-- Inserción del favicon -->
-    <link href="img/home/madtrendslogofavicon.png" rel="icon" type="image/home/png">
+    <link href="img/home/madtrendslogofavicon.png" rel="icon" type="image/png">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -61,6 +61,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 
+    <!-- Incluir AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <!-- Incluir AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    
+
 </head>
 
 <body>
@@ -71,6 +78,7 @@
             <video poster="img/home/madtrendsinicio.mp4" playsinline autoplay muted loop>
                 <source src="img/home/madtrendsinicio.mp4" type="video/webm">
             </video>
+        </div>
 
             <!-- Texto superpuesto -->
             <div class="overlay-text">
@@ -102,6 +110,7 @@
                             <button class="btn btn-outline-light">SIGN IN</button>
                         </div>
                     </div>
+
                     <!-- SUBMENÚ  -->
                      <div class="submenu">
                     <div class="collapse navbar-collapse" id="navbarNav">
@@ -139,6 +148,7 @@
 
 
     <section id="historia">
+        <div data-aos="fade-in" data-aos-duration="1000">
         <div class="container text-center">
             <h2 class="mb-4">EL FUTURO EMPIEZA HOY</h2>
             <p class="lead mb-4"> MAD TRENDS es una revista basada en Madrid, España. “De jóvenes, para jóvenes”. 
@@ -146,11 +156,14 @@
                 cuenta nuestras raíces. Nuestra cultura pop está presente en cada momento, por lo que traemos la tradición al día a día, convirtiéndonos en referentes para nuestra generación. </p>
             <a href="#more" class="btn-link white-text">READ MORE</a>
         </div>
+    </div>
     </section>
+
             
 
    
     <section id="vieneyva">
+        <div data-aos="fade-in" data-aos-duration="1000">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="text-left">
@@ -197,9 +210,11 @@
         </div>
             
         </div>
+    
     </section>
 
     <section id="dailyinspo">
+        <div data-aos="fade-in" data-aos-duration="1000">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="text-left">
@@ -229,7 +244,8 @@
             <div><img src="img/Home/p9.png" alt="Imagen 9"></div>
             <div><img src="img/Home/p10.png" alt="Imagen 10"></div>
         </div>
-            
+          
+        </div>
     </section>
 
     <section id="growingbrands">
@@ -243,6 +259,7 @@
                 </div>
             </div>
         </div>
+   
 
 
     <div class="brandsimages">
@@ -266,7 +283,7 @@
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content text-center" style="padding: 20px;">
                     <div class="modal-header border-0">
-                        <h2 class="modal-title w-100 text-black" id="modalTitle3">TWOJEYS</h2>
+                        <h2 class="modal-title w-100 text-black" id="modalTitle1">TWOJEYS</h2>
                     </div>
                     <div class="modal-body">
                         <p class="text-black"> En apenas cuatro años y con una pandemia de por medio, los dos jóvenes emprendedores han conseguido crear una empresa sólida y con unas perspectivas de crecimiento exponencial. 
@@ -323,11 +340,13 @@
 <div class="col-12 p-0">
     <div class="image-container">
         <img src="img/home/mas1.jpg" alt="Imagen a Pantalla Completa" class="full-width-image">
+        <div data-aos="fade-in" data-aos-duration="1000">
         <div class="overlay">
             <p>JEWELRY</p>
             <h2>TWOJEYS</h2>
             <a href="#" class="btn btn-light me-2" data-bs-toggle="modal" data-bs-target="#myModal3">LEER ARTÍCULO</a>
         </div>
+    </div>
     </div>
 </div>
 
@@ -357,14 +376,6 @@
 </div>
 </div>
 </div>
-
-
-    
-
-        
-
-       
-
 
     </section>
 
@@ -397,6 +408,7 @@
                     </div>
                 </div>
             </div>
+
     </section>
     
 
@@ -421,7 +433,7 @@
                             <div class="card-body">
                                 <p class="card-text text-black">CELEBRITY STYLE</p>
                                 <h6 class="card-title">“Ahead of Her Performance at Victoria’s Secret Fashion Show, An Ode to Cher’s Outlandish, Inimitable Outfits”</h6>
-                                <h9>By Janelle Okwodu</h9>
+                                <h4>By Janelle Okwodu</h4>
                             </div>
                         </div>
                     </div>
@@ -431,7 +443,7 @@
                             <div class="card-body">
                                 <p class="card-text text-black">MOVIE</p>
                                 <h6 class="card-title">“In Wicked, Costume Designer Paul Tazewell Makes Magic”</h6>
-                                <h9>By Marley Marius</h9>
+                                <h4>By Marley Marius</h4>
                             </div>
                         </div>
                     </div>
@@ -441,14 +453,13 @@
                             <div class="card-body">
                                 <p class="card-text text-black">SHOPPING</p>
                                 <h6 class="card-title">“Why Every Closet Should Have These 31 Fall Essentials”</h6>
-                                <h9>By Christina Holevas</h9>
+                                <h4>By Christina Holevas</h4>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
     </section> 
         
 <!-- Footer superior -->
@@ -462,11 +473,16 @@
             </div>
             <div class="col-md-3 footer-direction">
                 <ul class="list-unstyled">
+                    <li class="list-item">
                     <p>Av. de Alfonso XIII,  97, Chamartín. <br> 28016 - Madrid</p>
+                    </li>
+                    <li class="list-item">
                     <p>915 55 25 28</p>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-3 list-column footer-column">
+                <ul class="navbar-nav display-flex w-100">
                     <li class="list-item">
                         <a class="list-link" href="#historia">NUESTRA HISTORIA</a>
                     </li>
@@ -485,6 +501,7 @@
                     <li class="list-item">
                         <a class="list-link" href="#news">LATEST NEWS</a>
                     </li>
+                </ul>
             </div>
             <div class="form col-md-3 newsletter-column text-black">
                 <h5>Suscríbete a Nuestra Newsletter</h5>
@@ -499,7 +516,6 @@
                 
             </div>
         </div>
-    </div>
 </footer>
 
 <!-- Footer inferior -->

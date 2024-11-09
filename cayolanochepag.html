@@ -10,11 +10,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="https://use.typekit.net/qhm8wqj.css" />
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modal de Texto Grande</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
         
@@ -43,7 +38,7 @@
      <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
  
     <!-- Inserción del favicon -->
-    <link href="img/home/madtrendslogofavicon.png" rel="icon" type="image/home/png">
+    <link href="img/home/madtrendslogofavicon.png" rel="icon" type="image/png">
 
     <!-- Flickity CSS -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
@@ -60,13 +55,18 @@
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"> </script>
 
+     <!-- Incluir AOS CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+     <!-- Incluir AOS JS -->
+     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
 
 </head>
 
 <body>
     
     <header>
-
         <div class="header-container">
             <img src="img/noche/nocheheader.jpeg" alt="Imagen de Noche" class="full-width-header">
              <!-- Texto superpuesto -->
@@ -74,6 +74,7 @@
             <h1 class="text-start mb-2">CAYÓ LA NOCHE</h1>
             <p class="text-start mb-0">De Malasaña a Salamanca, te contamos los lugares <br> más top para salir esta temporada.</p>
         </div>
+    </div>
 
         <div class="menu">
             <!-- NAVBAR PRINCIPAL -->
@@ -135,15 +136,18 @@
     </header>
       
     <section id="historia">
+        <div data-aos="fade-in" data-aos-duration="1000">
         <div class="container text-center">
             <h2 class="mb-4">VIDA NOCTURNA MADRILEÑA</h2>
             <p class="lead mb-4"> Madrid, a nuestro parecer, tiene una de las mejores vidas nocturnas de España. Al ser la capital, los jóvenes tienen muchas posibilidades para disfrutar de noches inolvidables, no solo saliendo de fiesta a las discotecas más top, sino que hay muchas más opciones 
                 y aquí te las vamos a contar. </p>
         </div>
+        </div>
     </section>
 
 
         <div class="nocheimages">
+            <div data-aos="fade-in" data-aos-duration="1000">
             <div class="container-fluid">
                 <div class="row">
                     <!-- Sección MALASAÑA -->
@@ -243,14 +247,12 @@
                     </div>
                 </div>
             </div>
-            
-            
-            
-
-    </section>
+        </div>
+    </div>          
+           
    
     
-     <!-- Footer superior -->
+   <!-- Footer superior -->
 <footer class="footer-top">
     <div class="container">
         <div class="row">
@@ -261,11 +263,16 @@
             </div>
             <div class="col-md-3 footer-direction">
                 <ul class="list-unstyled">
+                    <li class="list-item">
                     <p>Av. de Alfonso XIII,  97, Chamartín. <br> 28016 - Madrid</p>
+                    </li>
+                    <li class="list-item">
                     <p>915 55 25 28</p>
+                    </li>
                 </ul>
             </div>
             <div class="col-md-3 list-column footer-column">
+                <ul class="navbar-nav display-flex w-100">
                     <li class="list-item">
                         <a class="list-link" href="#historia">NUESTRA HISTORIA</a>
                     </li>
@@ -284,6 +291,7 @@
                     <li class="list-item">
                         <a class="list-link" href="#news">LATEST NEWS</a>
                     </li>
+                </ul>
             </div>
             <div class="form col-md-3 newsletter-column text-black">
                 <h5>Suscríbete a Nuestra Newsletter</h5>
@@ -298,7 +306,6 @@
                 
             </div>
         </div>
-    </div>
 </footer>
 
 <!-- Footer inferior -->
@@ -314,16 +321,7 @@
     </div>
 </footer>
 
-
-
-
-
-
-
-
-
-       
-
+     
      
   <!-- CHART JS CDN -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -337,7 +335,6 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 
-  
-  </body>
+</body>
   
   </html>       
