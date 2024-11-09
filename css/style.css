@@ -464,12 +464,6 @@ div#fashion {
     margin-bottom: 10px; 
 }
 
-h9 {
-    font-size: 0.9rem; 
-    color: rgb(157, 157, 157); 
-    line-height: 1.5; 
-}
-
 .row-equal-height .col-md-4 {
     display: flex;
     flex-direction: column;
@@ -684,7 +678,7 @@ font-size: 1.2rem;
 @media (max-width: 650px)  { 
 
     h2 {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
 .container {
