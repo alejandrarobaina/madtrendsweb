@@ -645,8 +645,28 @@ font-size: 1.2rem;
 /* Ordenador */
 @media (max-width: 1920px) { 
     
-       
+    h1 {
+        font-size: 7em;
+    }
+
+    h2 {
+        font-size: 5em;
+    }
+
+    h3 {
+        font-size: 4em;
+    }
+
+    h4 {
+        font-size: em;
+    }
+
+    p { 
+        font-size: 1em;
+    }
 }
+
+
 
 /* Movil */
 @media (max-width: 450px) { 
@@ -655,8 +675,16 @@ h1 {
         font-size: 40px;
 }
 
-.container h2 {
-        font-size: 20px;
+h2 {
+    font-size: 20px;
+}
+
+p { 
+    font-size: 10px;
+}
+
+.lead {
+    font-size: 12px;
 }
 
 
