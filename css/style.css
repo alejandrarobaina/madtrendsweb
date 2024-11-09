@@ -58,7 +58,7 @@ h4 {
 
 
 .d-flex.justify-content-between {
-    gap: 2rem; /* Ajusta este valor para el espacio deseado */
+    gap: 2rem; 
 }
 
 .justify-content-between {
@@ -610,7 +610,6 @@ font-size: 1.2rem;
     font-size: 0.9rem; 
 }
 
-/* Estilos para los enlaces del submenú */
 .list-link {
     padding: 0;
     color: var(--color2);
@@ -647,7 +646,6 @@ font-size: 1.2rem;
        
 }
 
-
 /* Movil */
 @media (max-width: 450px) { 
 
@@ -663,19 +661,32 @@ h1 {
 .submenu {
     display: none;
     position: absolute;
-    top: 100%; /* Coloca el submenú justo debajo del menú principal */
+    top: 100%; 
     left: 0;
     width: 100%;
-    background-color: #fff; /* Fondo opcional */
+    background-color: #fff; 
     box-shadow: none !important;
 }
 
-/* Muestra el submenú al hacer hover sobre el navbar */
+.submenu .navbar-nav {
+    flex-direction: column; 
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 1rem 0; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 15px 0;
+}
+
 .navbar:hover .submenu {
     display: flex;
 }
 
-/* Estilo de los elementos del submenú como fila y centrados */
+
 .submenu .nav-item {
     display: inline-block;
     flex: 1;
@@ -683,74 +694,72 @@ h1 {
 }
 
 .submenu .nav-link {
-    color: #333; /* Color del texto */
+    color: #333; 
     padding: 10px;
     text-transform: uppercase;
 }
 
-/* Alinea el submenú en el centro de la pantalla */
 .navbar-nav {
     justify-content: center;
 }
 
-/* Eliminar el margen predeterminado del botón hamburguesa */
+
 .navbar-toggler {
-    margin: 0 !important; /* Elimina cualquier margen aplicado */
-    padding: 0; /* Si necesitas eliminar también el padding */
+    margin: 0 !important; 
+    padding: 0; 
 }
 
-/* Eliminar el borde y la sombra al hacer clic en el botón hamburguesa */
+
 .navbar-toggler:focus {
-    outline: none !important; /* Elimina el contorno */
-    box-shadow: none !important; /* Elimina la sombra de enfoque */
+    outline: none !important; 
+    box-shadow: none !important; 
 }
 
-/* También asegurarte de que el icono del botón hamburguesa no tenga borde */
 .navbar-toggler {
-    border: none !important; /* Elimina el borde que genera Bootstrap */
-    background-color: transparent; /* Si no deseas un fondo */
+    border: none !important; 
+    background-color: transparent; 
 }
 
-/* Asegurarse de que el icono sea visible al hacer hover sobre el navbar */
 .navbar:hover .navbar-toggler {
     display: block;
 }
 
-/* Ocultar el icono predeterminado */
+
 .navbar-toggler-icon {
     display: none;
 }
 
-/* Estilo para el ícono personalizado */
+
 .navbar-toggler i {
-    font-size: 30px; /* Tamaño del icono */
-    color: white;    /* Color del icono en su estado normal */
+    font-size: 30px; 
+    color: white;    
     transition: color 0.3s ease;
-    margin: 0 !important; /* Elimina cualquier margen aplicado */
-    padding: 0; /* Si necesitas eliminar también el padding */
+    margin: 0 !important; 
+    padding: 0; 
 }
 
-/* Cambiar el color del icono cuando se hace hover sobre el navbar */
+
 .navbar:hover .navbar-toggler i {
-    color: black;    /* Color del icono al hacer hover */
+    color: var(--color2);   
 } 
 
 
-    /* Botones a la derecha: desaparecen en pantallas pequeñas */
+   
 .d-flex.justify-content-end {
-        display: none; /* Esconder los botones en pantallas pequeñas */
+        display: none; 
 }
 
-    /* Cambiar el comportamiento de la navegación */
+   
 .navbar-collapse {
         text-align: center;
-        background-color: var(--background-color1); /* Fondo completo para el submenú */
+        background-color: var(--background-color1); 
         width: 100%;
         padding: 2rem 0;
 }
 
 .navbar-nav {
         flex-direction: column;
+        text-align: center;
 }
 
 .navbar-nav .nav-item {
@@ -762,12 +771,10 @@ h1 {
         padding: 15px 0;
 }
 
-/* Hacer que el submenú se despliegue solo al hacer clic */
 .navbar-collapse.show {
         display: block;
 }
-
-/* Historia */  
+ 
 #historia {
     padding-right: 10%;
     padding-left: 10%;
@@ -801,7 +808,7 @@ padding: 8%;
     padding: 2%;
 }
 .card-news {
-    margin: 0 auto; /* Centra cada card */
+    margin: 0 auto; 
     margin-bottom: 1em;
 }
 
