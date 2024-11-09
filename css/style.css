@@ -643,7 +643,7 @@ font-size: 1.2rem;
 /* Responsive */
 
 /* Ordenador */
-@media (max-width: 1920px) { 
+@media (max-width: 1920px) (min-width: 1280px) { 
     
     h1 {
         font-size: 7em;
@@ -664,6 +664,149 @@ font-size: 1.2rem;
     p { 
         font-size: 1em;
     }
+}
+
+/* Ordenador */
+@media (max-width: 1280px)  { 
+
+    h1 {
+        font-size: 5em;
+    }
+}
+
+/* Ipad */
+@media (max-width: 820px)  { 
+
+    h1 {
+        font-size: 4em;
+    }
+}
+
+/* Ipad MINI */
+@media (max-width: 650px)  { 
+
+    h2 {
+        font-size: 2em;
+    }
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: var(--background-color1);
+    box-shadow: none !important;
+}
+
+.submenu .navbar-nav {
+    flex-direction: column; 
+    text-align: center;
+}
+
+.navbar-nav .nav-item {
+    margin: 1rem 0; 
+}
+
+.navbar-nav .nav-link {
+    font-size: 18px;
+    padding: 15px 0;
+}
+
+.navbar:hover .submenu {
+    display: flex;
+}
+
+
+.submenu .nav-item {
+    display: inline-block;
+    flex: 1;
+    text-align: center;
+}
+
+.submenu .nav-link {
+    color: #333; 
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.navbar-nav {
+    justify-content: center;
+}
+
+
+.navbar-toggler {
+    margin: 0 !important; 
+    padding: 0; 
+}
+
+
+.navbar-toggler:focus {
+    outline: none !important; 
+    box-shadow: none !important; 
+}
+
+.navbar-toggler {
+    border: none !important; 
+    background-color: transparent; 
+}
+
+.navbar:hover .navbar-toggler {
+    display: block;
+}
+
+
+.navbar-toggler-icon {
+    display: none;
+}
+
+
+.navbar-toggler i {
+    font-size: 30px; 
+    color: white;    
+    transition: color 0.3s ease;
+    margin: 0 !important; 
+    padding: 0; 
+}
+
+
+.navbar:hover .navbar-toggler i {
+    color: var(--color2);   
+} 
+
+
+   
+.d-flex.justify-content-end {
+        display: none; 
+}
+
+   
+.navbar-collapse {
+        text-align: center;
+        background-color: var(--background-color1); 
+        width: 100%;
+        padding: 2rem 0;
+}
+
+.navbar-nav {
+        flex-direction: column;
+        text-align: center;
+}
+
+.navbar-nav .nav-item {
+        margin: 1rem 0;
+}
+
+.navbar-nav .nav-link {
+        font-size: 18px;
+        padding: 15px 0;
+}
+
+.navbar-collapse.show {
+        display: block;
+}
+ 
 }
 
 
